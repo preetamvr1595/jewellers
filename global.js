@@ -67,7 +67,19 @@ window.liveGoldRates = { 22: 14225, 24: 14936, silver: 285 };
 window.getApiBase = () => {
   const protocol = window.location.protocol;
   const hostname = window.location.hostname;
-  return window.location.port === '8000' ? `${protocol}//${hostname}:5000` : '';
+  
+  // Local development fallback
+  if (window.location.port === '8000' || hostname === 'localhost' || hostname === '127.0.0.1') {
+    return `${protocol}//${hostname}:5000`;
+  }
+  
+  // If hosted on Vercel or any other static platform, point to the live Render backend
+  if (hostname.includes('vercel.app') || (!hostname.includes('onrender.com') && hostname !== 'localhost')) {
+    return 'https://finalmgswebpage.onrender.com';
+  }
+  
+  // Default same-origin (when running directly on the Render server)
+  return '';
 };
 
 // Global Image URL resolver
