@@ -908,3 +908,313 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
   opacity: 1;
   pointer-events: all;
 }
+
+/* ==========================================
+   MGS GOLDEN HARVEST SAVINGS SCHEMES STYLE
+   ========================================== */
+.mgs-savings-section {
+  padding: 6rem 7% 8rem;
+  background: var(--ivory);
+  border-top: 1px solid var(--border);
+}
+
+.mgs-savings-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.mgs-savings-header .label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.mgs-savings-header h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.mgs-savings-header p {
+  color: var(--body-text);
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Schemes Layout Grid */
+.mgs-savings-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 2fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.mgs-savings-ad-card {
+  position: sticky;
+  top: 8rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(198, 167, 94, 0.16);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), 0 0 30px rgba(198, 167, 94, 0.08);
+}
+
+.mgs-savings-ad-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mgs-savings-ad-info {
+  padding: 1.8rem;
+}
+
+.mgs-savings-ad-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--gold-dim);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.mgs-savings-ad-info p {
+  font-size: 0.85rem;
+  color: var(--body-text);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* Saving Plan Cards Grid */
+.mgs-plans-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.mgs-plan-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(198, 167, 94, 0.15);
+  border-radius: 16px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02), 0 0 15px rgba(198,167,94,0.04);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.mgs-plan-card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background: var(--gold-gradient);
+}
+
+.mgs-plan-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(198, 167, 94, 0.12);
+  border-color: rgba(198, 167, 94, 0.35);
+}
+
+.mgs-plan-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.mgs-plan-header-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.mgs-plan-badge {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 700;
+  background: rgba(143, 113, 36, 0.08);
+  color: var(--gold-dim);
+  border: 1px solid rgba(143, 113, 36, 0.15);
+}
+
+.mgs-plan-card.elite-upcoming::before {
+  background: linear-gradient(135deg, #111111 0%, #B5964D 50%, #111111 100%);
+}
+
+.mgs-plan-card.elite-upcoming {
+  border: 1px solid rgba(198, 167, 94, 0.35);
+  background: linear-gradient(to right, #FFFFFF, rgba(143, 113, 36, 0.03));
+}
+
+.mgs-plan-card.elite-upcoming .mgs-plan-badge {
+  background: var(--gold-gradient);
+  color: #FFFFFF;
+  border-color: transparent;
+  animation: pulseBadge 2.5s infinite;
+}
+
+@keyframes pulseBadge {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(143, 113, 36, 0.6); }
+  70% { transform: scale(1.03); box-shadow: 0 0 0 6px rgba(143, 113, 36, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(143, 113, 36, 0); }
+}
+
+.mgs-plan-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.mgs-plan-desc {
+  font-size: 0.88rem;
+  color: var(--body-text);
+  line-height: 1.6;
+}
+
+.mgs-plan-perks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.mgs-plan-perk {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  background: var(--section-contrast);
+  color: var(--gold-dim);
+  border: 1px solid rgba(198, 167, 94, 0.12);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+.mgs-plan-perk.highlight {
+  background: rgba(46, 204, 113, 0.08);
+  color: var(--success);
+  border-color: rgba(46, 204, 113, 0.15);
+}
+
+.mgs-plan-perk.vip-highlight {
+  background: rgba(231, 76, 60, 0.08);
+  color: #E74C3C;
+  border-color: rgba(231, 76, 60, 0.15);
+}
+
+/* Pricing Grid Right Column */
+.mgs-plan-finances {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid rgba(198, 167, 94, 0.15);
+  padding-left: 1.5rem;
+  gap: 0.8rem;
+}
+
+.mgs-plan-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mgs-plan-amount .val {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--gold-dim);
+  line-height: 1;
+}
+
+.mgs-plan-amount .lbl {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--gray);
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}
+
+.mgs-plan-enroll-btn {
+  width: 100%;
+  padding: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 6px;
+  transition: var(--transition);
+  background: var(--section-contrast);
+  color: var(--gold-dim);
+  border: 1px solid rgba(198, 167, 94, 0.2);
+}
+
+.mgs-plan-enroll-btn:hover {
+  background: var(--gold-gradient);
+  color: #FFFFFF;
+  border-color: transparent;
+}
+
+.mgs-plan-card.elite-upcoming .mgs-plan-enroll-btn {
+  background: var(--gold-gradient);
+  color: #FFFFFF;
+  border-color: transparent;
+}
+
+.mgs-plan-card.elite-upcoming .mgs-plan-enroll-btn:hover {
+  filter: brightness(1.15);
+}
+
+/* Responsiveness */
+@media (max-width: 991px) {
+  .mgs-savings-layout {
+    grid-template-columns: 1fr;
+  }
+  .mgs-savings-ad-card {
+    position: static;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .mgs-plan-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .mgs-plan-finances {
+    border-left: none;
+    border-top: 1px solid rgba(198, 167, 94, 0.15);
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+}
+/* End of MGS Savings */
+
+}
