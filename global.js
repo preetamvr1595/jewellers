@@ -142,6 +142,7 @@ async function updateTicker() {
     window.liveGoldRates = { 22: data.gold22, 24: data.gold24, silver: data.silver };
     
     if (window.calcMiniGold) window.calcMiniGold();
+    if (window.updateFloatRates) window.updateFloatRates();
   } catch (error) {
     console.error('Ticker update error:', error);
   }
@@ -192,4 +193,146 @@ function showToast(message, type = 'success') {
     toast.style.transition = 'all 0.3s ease';
     setTimeout(() => toast.remove(), 300);
   }, 4000);
+}
+
+// ────────────────────────────────────────
+// DYNAMIC FLOATING RATES WIDGET INJECTION
+// ────────────────────────────────────────
+function injectFloatingRatesWidget() {
+  // Prevent duplicate injection
+  if (document.getElementById('mgs-rates-tab')) return;
+
+  const container = document.createElement('div');
+  container.className = 'mgs-rates-widget-container';
+  container.innerHTML = `
+    <!-- Floating Tab Trigger -->
+    <div class="mgs-rates-floating-tab" id="mgs-rates-tab" title="View Today's Live Rates">
+      <div class="mgs-tab-content">
+        <svg class="mgs-tab-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+        </svg>
+        <span class="mgs-tab-text">RATES</span>
+      </div>
+    </div>
+
+    <!-- Slide-out Sidebar Panel -->
+    <div class="mgs-rates-panel" id="mgs-rates-panel">
+      <div class="mgs-rates-panel-header">
+        <div>
+          <h3 class="mgs-panel-title">Today's Rates</h3>
+          <div class="mgs-panel-date" id="mgs-panel-date">Loading date...</div>
+        </div>
+        <button class="mgs-panel-close-btn" id="mgs-panel-close" aria-label="Close rates panel">✕</button>
+      </div>
+      
+      <div class="mgs-rates-panel-body">
+        <!-- Rate Card 1: 22K Gold -->
+        <div class="mgs-rate-card gold-22k">
+          <div class="mgs-rate-card-icon">🪙</div>
+          <div class="mgs-rate-card-details">
+            <span class="mgs-rate-label">Gold Rate (22K)</span>
+            <span class="mgs-rate-value" id="mgs-float-gold22">₹6,842 <span class="mgs-unit">/ gram</span></span>
+          </div>
+          <span class="mgs-rate-change positive" id="mgs-float-gold22c">▲ 0.4%</span>
+        </div>
+
+        <!-- Rate Card 2: 24K Gold -->
+        <div class="mgs-rate-card gold-24k">
+          <div class="mgs-rate-card-icon">👑</div>
+          <div class="mgs-rate-card-details">
+            <span class="mgs-rate-label">Gold Rate (24K)</span>
+            <span class="mgs-rate-value" id="mgs-float-gold24">₹7,490 <span class="mgs-unit">/ gram</span></span>
+          </div>
+          <span class="mgs-rate-change positive" id="mgs-float-gold24c">▲ 0.3%</span>
+        </div>
+
+        <!-- Rate Card 3: Silver -->
+        <div class="mgs-rate-card silver-rate">
+          <div class="mgs-rate-card-icon">🥈</div>
+          <div class="mgs-rate-card-details">
+            <span class="mgs-rate-label">Silver Rate</span>
+            <span class="mgs-rate-value" id="mgs-float-silver">₹89.2 <span class="mgs-unit">/ gram</span></span>
+          </div>
+          <span class="mgs-rate-change negative" id="mgs-float-silverc">▼ 0.1%</span>
+        </div>
+      </div>
+      
+      <div class="mgs-rates-panel-footer">
+        <div class="mgs-footer-note">✦ Rates updated dynamically ✦</div>
+        <a href="calculator.html" class="mgs-calc-shortcut-btn">Use Gold Calculator ▸</a>
+      </div>
+    </div>
+
+    <!-- Overlay Backing -->
+    <div class="mgs-rates-overlay" id="mgs-rates-overlay"></div>
+  `;
+  document.body.appendChild(container);
+
+  // Set today's date formatted beautifully
+  const dateEl = document.getElementById('mgs-panel-date');
+  if (dateEl) {
+    const today = new Date();
+    const options = { day: 'numeric', month: 'short', year: 'numeric' };
+    dateEl.textContent = today.toLocaleDateString('en-IN', options);
+  }
+
+  // Toggle Panel Open/Close
+  const tabBtn = document.getElementById('mgs-rates-tab');
+  const panel = document.getElementById('mgs-rates-panel');
+  const overlay = document.getElementById('mgs-rates-overlay');
+  const closeBtn = document.getElementById('mgs-panel-close');
+
+  const openPanel = () => {
+    panel?.classList.add('open');
+    overlay?.classList.add('open');
+  };
+
+  const closePanel = () => {
+    panel?.classList.remove('open');
+    overlay?.classList.remove('open');
+  };
+
+  tabBtn?.addEventListener('click', openPanel);
+  closeBtn?.addEventListener('click', closePanel);
+  overlay?.addEventListener('click', closePanel);
+
+  // Also support hover for opening (optional, let's keep click for solid mobile compatibility and hover for desktop)
+  tabBtn?.addEventListener('mouseenter', openPanel);
+  
+  // Close panel if mouse leaves the container on desktop
+  container.addEventListener('mouseleave', (e) => {
+    // Only auto-close on large viewports
+    if (window.innerWidth > 768) {
+      closePanel();
+    }
+  });
+
+  // Call initial rate mapping
+  window.updateFloatRates();
+}
+
+// Function to update float widget with live rate values
+window.updateFloatRates = () => {
+  const g22Val = document.getElementById('mgs-float-gold22');
+  const g24Val = document.getElementById('mgs-float-gold24');
+  const silVal = document.getElementById('mgs-float-silver');
+
+  const fmt = (v, unit = '/ gram') => `₹${Math.round(v).toLocaleString('en-IN')} <span class="mgs-unit">${unit}</span>`;
+
+  if (window.liveGoldRates) {
+    let r22 = window.liveGoldRates[22] || 6842;
+    let r24 = window.liveGoldRates[24] || 7490;
+    let rSil = window.liveGoldRates.silver || 89.2;
+
+    if (g22Val) g22Val.innerHTML = fmt(r22);
+    if (g24Val) g24Val.innerHTML = fmt(r24);
+    if (silVal) silVal.innerHTML = fmt(rSil * 1000, '/ kg'); // Silver per kg in India
+  }
+};
+
+// Hook into DOMContentLoaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', injectFloatingRatesWidget);
+} else {
+  injectFloatingRatesWidget();
 }
