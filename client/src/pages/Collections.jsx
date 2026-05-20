@@ -6,6 +6,7 @@ import { API_BASE } from '../services/api'
 const CATEGORIES = [
   { key: 'all', label: 'All Pieces' },
   { key: 'bridal', label: 'Bridal Sets' },
+  { key: 'diamond', label: 'Diamond' },
   { key: 'necklaces', label: 'Necklaces' },
   { key: 'bangles', label: 'Bangles' },
   { key: 'earrings', label: 'Earrings' },

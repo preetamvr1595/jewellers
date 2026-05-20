@@ -89,6 +89,7 @@ export default function ProductForm(){
               <label className="label-lux">Category</label>
               <select name="category" value={formData.category} onChange={handleChange} className="input-lux">
                 <option value="bridal">Bridal</option>
+                <option value="diamond">Diamond</option>
                 <option value="bangles">Bangles</option>
                 <option value="necklaces">Necklaces</option>
                 <option value="earrings">Earrings</option>
