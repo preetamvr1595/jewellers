@@ -1,8 +1,8 @@
-# MGS Jewellery - Project Documentation
+# MGS Jewellerys - Project Documentation
 
 ## Overview
 
-MGS Jewellery is a dual-application project consisting of:
+MGS Jewellerys is a dual-application project consisting of:
 - **Public Website**: Static HTML pages showcasing jewellery collections
 - **Admin Dashboard**: React-based CMS for managing products, collections, offers, and rates
 

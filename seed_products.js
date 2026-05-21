@@ -168,7 +168,7 @@ categories.forEach((cat, catIdx) => {
     products.push({
       name: name,
       price: Math.round(basePrice),
-      description: `Exquisite 22K ${cat.key} from MGS Jewellery Davanagere. Handcrafted with traditional craftsmanship and BIS/HUID certified for purity.`,
+      description: `Exquisite 22K ${cat.key} from MGS Jewellerys Davanagere. Handcrafted with traditional craftsmanship and BIS/HUID certified for purity.`,
       images: [img],
       hallmark: 'HUID',
       purity: '22K Gold (91.6%)',

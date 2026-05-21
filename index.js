@@ -125,7 +125,7 @@ document.querySelectorAll('.hero-thumb').forEach(thumb => {
       heroImg.style.transform = 'scale(1.05)';
       setTimeout(() => {
         heroImg.src = thumb.dataset.img;
-        heroImg.alt = thumb.dataset.name + ' — HUID/BIS Hallmark, MGS Jewellery';
+        heroImg.alt = thumb.dataset.name + ' — HUID/BIS Hallmark, MGS Jewellerys';
         heroImg.style.opacity = '1';
         heroImg.style.transform = 'scale(1)';
       }, 300);

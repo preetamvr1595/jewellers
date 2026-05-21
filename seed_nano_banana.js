@@ -197,7 +197,7 @@ categoriesKeys.forEach((category) => {
     const hallmark = category === "diamond" ? "HUID & IGI Certified" : "HUID Certified";
     const purity = category === "diamond" ? "18K Gold & VS Diamond" : "22K Gold (91.6%)";
 
-    const desc = `Bespoke handcrafted 22K gold piece from MGS Jewellery Davanagere. Inspiring premium aesthetics, meticulous attention to detail, BIS and HUID hallmarked for pristine quality.`;
+    const desc = `Bespoke handcrafted 22K gold piece from MGS Jewellerys Davanagere. Inspiring premium aesthetics, meticulous attention to detail, BIS and HUID hallmarked for pristine quality.`;
 
     newProducts.push({
       name: catNames[i],

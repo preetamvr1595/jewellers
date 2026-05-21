@@ -1,6 +1,6 @@
-# MGS Jewellery Admin (scaffold)
+# MGS Jewellerys Admin (scaffold)
 
-This workspace contains a scaffolded Admin Dashboard for MGS Jewellery.
+This workspace contains a scaffolded Admin Dashboard for MGS Jewellerys.
 
 Frontend (client): React + Vite + Tailwind
 Backend (server): Node.js + Express + MongoDB + Cloudinary
@@ -35,11 +35,11 @@ npm run dev
 Notes:
 - The backend provides protected routes under `/api/*` and an upload endpoint using Cloudinary. Replace Cloudinary env vars to enable uploads.
 - This scaffold focuses on a luxury visual style (ivory background, gold accents, serif headings). Expand components and API integration as needed.
-# MGS JEWELLERY — Official Website
+# MGS JEWELLERYS — Official Website
 
 > **Davanagere's Legacy of Pure Gold · Est. 1999**
 
-A full-stack, client-facing luxury jewelry website for **MGS Jewellery**, Davanagere, Karnataka. Built as a complete digital transformation platform — transitioning a 24-year goldsmith heritage into a modern, sales-accelerating digital presence.
+A full-stack, client-facing luxury jewelry website for **MGS Jewellerys**, Davanagere, Karnataka. Built as a complete digital transformation platform — transitioning a 24-year goldsmith heritage into a modern, sales-accelerating digital presence.
 
 ---
 
@@ -137,11 +137,11 @@ npx serve .
 
 ## 📞 Business Info
 
-- **Store:** MGS Jewellery, Vijayalakshmi Road, Near Clock Tower, Davanagere — 577 001
+- **Store:** MGS Jewellerys, Vijayalakshmi Road, Near Clock Tower, Davanagere — 577 001
 - **Established:** 1999
 - **Speciality:** Senior Goldsmith & Maker — 22K BIS/HUID Hallmark Certified
 - **WhatsApp:** +91 80 2500 0000
 
 ---
 
-*© 2024 MGS Jewellery · Davanagere, Karnataka · All Rights Reserved*
+*© 2024 MGS Jewellerys · Davanagere, Karnataka · All Rights Reserved*

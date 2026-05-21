@@ -13,7 +13,7 @@ const initialData = {
     {
       _id: 'o1',
       title: 'Shubh Diwali Special',
-      description: 'Celebrate this Diwali with unmatched value on pure gold. For a limited period, MGS Jewellery is offering our lowest-ever making charges and maximum value on old gold exchange.',
+      description: 'Celebrate this Diwali with unmatched value on pure gold. For a limited period, MGS Jewellerys is offering our lowest-ever making charges and maximum value on old gold exchange.',
       poster: 'assets/diwali_poster.png',
       wastage: '7.99%',
       discount: '100% OFF',
