@@ -174,3 +174,140 @@ window.calcMiniGold = function() {
 
 document.getElementById('mini-weight')?.addEventListener('input', window.calcMiniGold);
 document.getElementById('mini-purity')?.addEventListener('change', window.calcMiniGold);
+
+// ==========================================
+// WHY CHOOSE CAROUSEL LOGIC
+// ==========================================
+function initWhyCarousel() {
+  const track = document.getElementById('why-carousel-track');
+  const dotsContainer = document.getElementById('why-carousel-dots');
+  if (!track || !dotsContainer) return;
+
+  const slides = Array.from(track.children);
+  const dotCount = slides.length;
+  let currentIndex = 0;
+  let slideInterval;
+
+  // Render Dots
+  dotsContainer.innerHTML = '';
+  for (let i = 0; i < dotCount; i++) {
+    const dot = document.createElement('button');
+    dot.className = `mgs-carousel-dot ${i === 0 ? 'active' : ''}`;
+    dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+    dotsContainer.appendChild(dot);
+
+    dot.addEventListener('click', () => {
+      clearInterval(slideInterval);
+      moveToSlide(i);
+      startAutoSlide();
+    });
+  }
+
+  const dots = Array.from(dotsContainer.children);
+
+  function moveToSlide(index) {
+    if (index < 0) index = dotCount - 1;
+    if (index >= dotCount) index = 0;
+    
+    track.style.transform = `translateX(-${index * 100}%)`;
+    dots[currentIndex].classList.remove('active');
+    dots[index].classList.add('active');
+    currentIndex = index;
+  }
+
+  function startAutoSlide() {
+    slideInterval = setInterval(() => {
+      moveToSlide(currentIndex + 1);
+    }, 5000);
+  }
+
+  // Touch / Swipe Navigation
+  let startX = 0;
+  let isDragging = false;
+
+  track.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+    clearInterval(slideInterval);
+  }, { passive: true });
+
+  track.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+  }, { passive: true });
+
+  track.addEventListener('touchend', (e) => {
+    if (!isDragging) return;
+    const endX = e.changedTouches[0].clientX;
+    const diffX = startX - endX;
+
+    if (Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        moveToSlide(currentIndex + 1);
+      } else {
+        moveToSlide(currentIndex - 1);
+      }
+    }
+    isDragging = false;
+    startAutoSlide();
+  }, { passive: true });
+
+  // Init Auto Slide
+  startAutoSlide();
+}
+
+// ==========================================
+// LIGHTBOX MODAL LOGIC FOR POSTER
+// ==========================================
+function initPosterLightbox() {
+  const adCard = document.getElementById('savings-ad-card');
+  const modal = document.getElementById('mgs-poster-modal');
+  const modalImg = document.getElementById('lightbox-img');
+  const closeBtn = document.getElementById('mgs-lightbox-close');
+
+  if (!adCard || !modal || !modalImg) return;
+
+  adCard.addEventListener('click', (e) => {
+    // Prevent opening if the user clicked the WhatsApp button directly
+    if (e.target.closest('.btn-gold')) return;
+
+    const img = adCard.querySelector('img');
+    if (img) {
+      modalImg.src = img.src;
+      modal.style.display = 'block';
+      setTimeout(() => {
+        modal.classList.add('show');
+      }, 10);
+      document.body.style.overflow = 'hidden'; // Lock background scrolling
+    }
+  });
+
+  function closeModal() {
+    modal.classList.remove('show');
+    setTimeout(() => {
+      modal.style.display = 'none';
+      document.body.style.overflow = ''; // Restore scrolling
+    }, 400);
+  }
+
+  if (closeBtn) closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target !== modalImg) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+      closeModal();
+    }
+  });
+}
+
+// Call on DOMContentLoaded / load
+document.addEventListener('DOMContentLoaded', () => {
+  initWhyCarousel();
+  initPosterLightbox();
+});
+// Also call immediately just in case
+initWhyCarousel();
+initPosterLightbox();
