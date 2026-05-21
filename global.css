@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Rajdhani:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700&display=swap');
 
 /* ===========================
    DESIGN SYSTEM TOKENS
@@ -31,6 +31,7 @@
   --gold:        #8F7124;
   --gold-dim:    #6B541A;
   --gold-bright: #B5964D;
+  --gold-dark:   #503D10; /* Premium rich deep gold-bronze for maximum contrast & visibility */
   --gold-gradient:   linear-gradient(135deg, #8F7124 0%, #B5964D 45%, #6B541A 100%);
   --gold-gradient-h: linear-gradient(90deg,  #8F7124 0%, #B5964D 50%, #8F7124 100%);
 
@@ -825,6 +826,10 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
   display: flex;
   align-items: baseline;
   gap: 0.2rem;
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
 }
 
 .mgs-rate-value .mgs-unit {
@@ -951,7 +956,7 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
 /* Schemes Layout Grid */
 .mgs-savings-layout {
   display: grid;
-  grid-template-columns: 1.1fr 2fr;
+  grid-template-columns: 1.3fr 1.7fr;
   gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -966,12 +971,81 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), 0 0 30px rgba(198, 167, 94, 0.08);
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+
+/* Glassy Shine Effect */
+.mgs-savings-ad-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: all 0.75s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.mgs-savings-ad-card:hover::before {
+  left: 150%;
+}
+
+.mgs-savings-ad-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(198, 167, 94, 0.25), 0 0 40px rgba(198, 167, 94, 0.15);
+  border-color: rgba(198, 167, 94, 0.4);
 }
 
 .mgs-savings-ad-card img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.mgs-savings-ad-card:hover img {
+  transform: scale(1.03);
+}
+
+/* Zoom Hover Indicator overlay */
+.mgs-savings-ad-card .zoom-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(10, 10, 10, 0.75);
+  color: #FAF9F6;
+  border: 1px solid rgba(198, 167, 94, 0.4);
+  border-radius: 50px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+  z-index: 3;
+  pointer-events: none;
+  backdrop-filter: blur(4px);
+}
+
+.mgs-savings-ad-card:hover .zoom-overlay {
+  opacity: 1;
+  background: var(--gold-dark);
+  color: var(--body-bg);
+  border-color: var(--gold-dark);
+  box-shadow: 0 0 15px rgba(198, 167, 94, 0.5);
+  transform: scale(1.05);
 }
 
 .mgs-savings-ad-info {
@@ -1217,4 +1291,234 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
 }
 /* End of MGS Savings */
 
+}
+
+/* ==========================================================================
+   HIGH LEGIBILITY BOLD & DARK GOLD LABELS (USER REQUEST)
+   Ensures all light gold monospaced uppercase labels, eyebrows, and tags
+   are bold, dark, and highly visible across the entire application.
+   ========================================================================== */
+
+/* 1. Global Monospace & Boldness Overrides */
+.label,
+.section-header .label,
+.eyebrow,
+.heritage-hero-text .eyebrow,
+.promise-inner .eyebrow,
+.hero-badge,
+.tag-hallmark,
+.tag-purity,
+.countdown-label,
+.mgs-savings-header .label,
+.offers-page-header .label,
+.collections-hero-content .label,
+.calc-page-header .label,
+.crr-label,
+.crr-total .crr-label,
+.stat-label,
+.ovc-label,
+.bc-label,
+.dev-tagline,
+.store-num,
+.mgs-plan-badge,
+.benefit-badge,
+.step-badge,
+.footer-col h4,
+.founding-text .section-label,
+.founding-quote-card cite,
+.poc-tag,
+.poc-status,
+.status-dot,
+.calc-card-header h2,
+#gold-ticker .ticker-label,
+#ticker-custom,
+#ticker-custom-dup,
+.footer-bottom .dev-tagline,
+.footer-hallmarks span,
+.calc-mini-header,
+.calc-field label,
+.strip-label,
+.results-count,
+.pc-weight,
+.pc-price,
+.tl-year,
+.store-hours strong,
+.calc-mini-row label,
+.calc-mini-result > span:first-child,
+.calc-mini-note,
+.offer-pill,
+.offer-countdown,
+.cd-unit span,
+.bc-unit span,
+.cd-sep,
+.mgs-steps-timeline .step-num,
+.mgs-carousel-slide .benefit-badge,
+.benefit-card .benefit-badge,
+.step-card .step-badge,
+.why-title-badge,
+.step-title-badge,
+.hallmark-badge,
+.hero-stat .lbl,
+.hero-year-badge .yr-label,
+.live-rate-cell .lrc-metal,
+.live-rate-cell .lrc-change,
+.mgs-rate-label,
+.mgs-footer-note,
+.mgs-plan-amount .lbl,
+.mgs-plan-perk,
+[style*="font-family:var(--font-mono)"],
+[style*="font-family: var(--font-mono)"],
+[style*="font-family:var(--font-mono);"],
+[style*="font-family: var(--font-mono);"] {
+  font-family: var(--font-mono) !important;
+  font-weight: 700 !important;
+}
+
+/* 2. Global Dark Gold Color Overrides (Excluding dark backgrounds & badges) */
+.label,
+.section-header .label,
+.eyebrow,
+.heritage-hero-text .eyebrow,
+.promise-inner .eyebrow,
+.hero-badge,
+.tag-hallmark,
+.tag-purity,
+.countdown-label,
+.mgs-savings-header .label,
+.offers-page-header .label,
+.collections-hero-content .label,
+.calc-page-header .label,
+.crr-label,
+.crr-total .crr-label,
+.stat-label,
+.ovc-label,
+.bc-label,
+.dev-tagline,
+.store-num,
+.mgs-plan-badge,
+.benefit-badge,
+.step-badge,
+.footer-col h4,
+.founding-text .section-label,
+.founding-quote-card cite,
+.poc-tag,
+.poc-status.upcoming,
+.poc-status.expired,
+.calc-card-header h2,
+#gold-ticker .ticker-label,
+#ticker-custom,
+#ticker-custom-dup,
+.footer-bottom .dev-tagline,
+.footer-hallmarks span,
+.calc-mini-header,
+.calc-field label,
+.strip-label,
+.results-count,
+.pc-weight,
+.pc-price,
+.tl-year,
+.store-hours strong,
+.calc-mini-row label,
+.calc-mini-result > span:first-child,
+.calc-mini-note,
+.offer-pill,
+.offer-countdown,
+.cd-unit span:last-child,
+.bc-unit span:last-child,
+.cd-sep,
+.mgs-steps-timeline .step-num,
+.mgs-carousel-slide .benefit-badge,
+.benefit-card .benefit-badge,
+.step-card .step-badge,
+.why-title-badge,
+.step-title-badge,
+.hallmark-badge,
+.hero-stat .lbl,
+.hero-year-badge .yr-label,
+.live-rate-cell .lrc-metal,
+.mgs-rate-label,
+.mgs-footer-note,
+.mgs-plan-amount .lbl,
+.mgs-plan-perk,
+[style*="font-family:var(--font-mono)"],
+[style*="font-family: var(--font-mono)"],
+[style*="font-family:var(--font-mono);"],
+[style*="font-family: var(--font-mono);"] {
+  color: var(--gold-dark) !important; /* Premium rich deep gold-bronze for maximum contrast & visibility */
+  text-shadow: none !important; /* Remove light shadows that reduce contrast */
+}
+
+/* Lightbox Modal CSS for Savings Schemes Poster */
+.mgs-lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(10, 10, 10, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.mgs-lightbox-modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.mgs-lightbox-content {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-width: 90%;
+  max-height: 85vh;
+  border-radius: 12px;
+  border: 2px solid rgba(198, 167, 94, 0.4);
+  box-shadow: 0 0 50px rgba(198, 167, 94, 0.3);
+  transform: scale(0.7);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mgs-lightbox-modal.show .mgs-lightbox-content {
+  transform: scale(1);
+}
+
+.mgs-lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #FAF9F6;
+  font-size: 40px;
+  font-weight: 300;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 10100;
+}
+
+.mgs-lightbox-close:hover,
+.mgs-lightbox-close:focus {
+  color: var(--gold-dark);
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+#mgs-lightbox-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #FAF9F6;
+  padding: 15px 0;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  opacity: 0.85;
 }

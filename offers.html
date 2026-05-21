@@ -126,6 +126,8 @@
 
     .ovc-value {
       font-family: var(--font-serif);
+      font-variant-numeric: lining-nums;
+      font-feature-settings: "lnum";
       font-size: 1.6rem;
       background: var(--gold-gradient);
       -webkit-background-clip: text;
@@ -294,6 +296,286 @@
         grid-template-columns: 1fr 1fr;
       }
     }
+
+    /* ==========================================
+       WHY CHOOSE CAROUSEL & 3 STEPS TIMELINE
+       ========================================== */
+    .mgs-why-choose-section, .mgs-steps-section {
+      margin-top: 6rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Benefits Carousel */
+    .mgs-carousel-wrapper {
+      position: relative;
+      max-width: 1000px;
+      margin: 3rem auto 0;
+      overflow: hidden;
+      padding: 1rem;
+    }
+
+    .mgs-carousel-track-container {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .mgs-carousel-track {
+      display: flex;
+      transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+      width: 100%;
+    }
+
+    .mgs-carousel-slide {
+      min-width: 100%;
+      flex-shrink: 0;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+
+    .mgs-why-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(198, 167, 94, 0.15);
+      border-radius: 16px;
+      padding: 3rem 2.5rem;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02), 0 0 30px rgba(198, 167, 94, 0.04);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .mgs-why-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(198, 167, 94, 0.12);
+      border-color: rgba(198, 167, 94, 0.35);
+    }
+
+    .mgs-why-icon-wrapper {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--section-contrast);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(198, 167, 94, 0.15);
+      color: var(--gold);
+      box-shadow: 0 4px 10px rgba(198, 167, 94, 0.05);
+    }
+
+    .mgs-why-icon-wrapper svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .mgs-why-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--gold-dim);
+      font-weight: 600;
+    }
+
+    .mgs-why-card p {
+      font-size: 0.95rem;
+      color: var(--body-text);
+      line-height: 1.7;
+    }
+
+    .mgs-carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.8rem;
+      margin-top: 2rem;
+    }
+
+    .mgs-carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(198, 167, 94, 0.25);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      padding: 0;
+    }
+
+    .mgs-carousel-dot.active {
+      background: var(--gold-gradient);
+      width: 28px;
+      border-radius: 999px;
+    }
+
+    /* Steps Timeline */
+    .mgs-timeline-container {
+      position: relative;
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem 0;
+    }
+
+    .mgs-timeline-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: linear-gradient(to bottom, rgba(198, 167, 94, 0.1) 0%, var(--gold) 20%, var(--gold) 80%, rgba(198, 167, 94, 0.1) 100%);
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .mgs-timeline-step {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 7rem;
+      z-index: 2;
+    }
+
+    .mgs-timeline-step:last-child {
+      margin-bottom: 0;
+    }
+
+    .mgs-timeline-step:nth-child(even) .mgs-step-graphic-container {
+      order: 2;
+    }
+
+    .mgs-timeline-step:nth-child(even) .mgs-step-info-container {
+      order: 1;
+      text-align: right;
+    }
+
+    .mgs-step-graphic-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mgs-step-info-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .mgs-step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--section-contrast);
+      border: 2px solid var(--gold);
+      color: var(--gold-dim);
+      font-family: var(--font-mono);
+      font-size: 1.1rem;
+      font-weight: 700;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(50% - 27px);
+      box-shadow: 0 0 20px rgba(198, 167, 94, 0.15);
+      z-index: 5;
+      transition: var(--transition);
+    }
+
+    .mgs-timeline-step:hover .mgs-step-badge {
+      background: var(--gold-gradient);
+      color: #FFFFFF;
+      border-color: transparent;
+      transform: translateX(-50%) scale(1.15);
+      box-shadow: 0 0 25px rgba(198, 167, 94, 0.35);
+    }
+
+    .mgs-step-title {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      color: var(--text-dark);
+      font-weight: 700;
+    }
+
+    .mgs-step-desc {
+      font-size: 0.95rem;
+      color: var(--body-text);
+      line-height: 1.7;
+    }
+
+    .mgs-step-graphic {
+      background: #FFFFFF;
+      border: 1px solid rgba(198, 167, 94, 0.15);
+      border-radius: 16px;
+      padding: 1.5rem;
+      width: 100%;
+      max-width: 380px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.02), 0 0 20px rgba(198, 167, 94, 0.04);
+      transition: var(--transition);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mgs-step-graphic:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(198, 167, 94, 0.12);
+      border-color: rgba(198, 167, 94, 0.3);
+    }
+
+    .mgs-step-graphic svg {
+      width: 100%;
+      height: auto;
+      max-height: 220px;
+    }
+
+    /* Responsive Timeline */
+    @media (max-width: 768px) {
+      .mgs-timeline-line {
+        left: 30px;
+        transform: none;
+      }
+
+      .mgs-timeline-step {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding-left: 70px;
+        margin-bottom: 5rem;
+      }
+
+      .mgs-timeline-step:nth-child(even) .mgs-step-graphic-container {
+        order: 1;
+      }
+
+      .mgs-timeline-step:nth-child(even) .mgs-step-info-container {
+        order: 2;
+        text-align: left;
+      }
+
+      .mgs-step-badge {
+        left: 30px;
+        transform: translateX(-50%);
+        top: 0;
+      }
+
+      .mgs-timeline-step:hover .mgs-step-badge {
+        transform: translateX(-50%) scale(1.1);
+      }
+
+      .mgs-step-graphic-container {
+        justify-content: flex-start;
+      }
+
+      .mgs-step-graphic {
+        max-width: 100%;
+      }
+    }
   </style>
 
   <link rel="canonical" href="https://finalmgswebpage.onrender.com/offers.html">
@@ -414,12 +696,13 @@
 
     <div class="mgs-savings-layout animate-in" style="margin-bottom: 6rem;">
       <!-- Left side: Visual Banner Ad -->
-      <div class="mgs-savings-ad-card">
-        <img src="assets/golden_harvest_savings_banner.png" alt="MGS Golden Harvest Savings Schemes">
+      <div class="mgs-savings-ad-card" id="savings-ad-card">
+        <div class="zoom-overlay"><span>🔍</span> Click to Zoom</div>
+        <img src="assets/aurum_advantage_poster.jpg" alt="MGS Aurum Advantage Plan Scheme Poster">
         <div class="mgs-savings-ad-info">
-          <h3>No Making Charges Benefit</h3>
-          <p>Enrolling in our Swarna Vruksha schemes gives you the ultimate maker advantage. Accumulate gold weight or value monthly, and MGS will add a bonus installment upon maturity with zero making charges!</p>
-          <a href="https://wa.me/917892314633?text=Hello%20MGS!%20I%27d%20like%20to%20know%20more%20details%20about%20your%20Swarna%20Vruksha%20Gold%20Saving%20Schemes." target="_blank" class="btn btn-gold" style="width:100%;justify-content:center">✦ Ask Details on WhatsApp</a>
+          <h3>Aurum Advantage Saving Plan</h3>
+          <p>Enrolling in our brand-new Aurum Advantage schemes gives you the ultimate maker advantage. Accumulate gold weight or value monthly, and MGS will add a full bonus installment upon maturity with zero making charges!</p>
+          <a href="https://wa.me/917892314633?text=Hello%20MGS!%20I%27d%20like%20to%20know%20more%20details%20about%20your%20Aurum%20Advantage%20Gold%20Saving%20Schemes." target="_blank" class="btn btn-gold" style="width:100%;justify-content:center">✦ Ask Details on WhatsApp</a>
         </div>
       </div>
 
@@ -499,6 +782,192 @@
       </div>
     </div>
 
+    <!-- ===== WHY THOUSANDS CHOOSE US ===== -->
+    <div class="mgs-why-choose-section animate-in">
+      <div class="section-header">
+        <span class="label">Why MGS Swarna Vruksha</span>
+        <h2>Why Thousands Choose Us</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="mgs-carousel-wrapper">
+        <div class="mgs-carousel-track-container">
+          <div class="mgs-carousel-track" id="why-carousel-track">
+            <!-- Slide 1 -->
+            <div class="mgs-carousel-slide">
+              <div class="mgs-why-card">
+                <div class="mgs-why-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                </div>
+                <h3>Quick & Easy Enrollment</h3>
+                <p>Enrol in just a few taps via WhatsApp or in-store. Choose between our standard 12-month, premium 15-month, or flexi-schemes, and get closer to your golden goals.</p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mgs-carousel-slide">
+              <div class="mgs-why-card">
+                <div class="mgs-why-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                    <line x1="7" y1="7" x2="7.01" y2="7" />
+                  </svg>
+                </div>
+                <h3>Dynamic Bonus Installment</h3>
+                <p>MGS adds a full month's dynamic bonus installment to your savings (+₹1,000 for standard, +₹2,000 for premium) completely paid by us at maturity!</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mgs-carousel-slide">
+              <div class="mgs-why-card">
+                <div class="mgs-why-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                  </svg>
+                </div>
+                <h3>Zero Making Charges Guarantee</h3>
+                <p>Purchase your favourite ornaments with complete waiver on making charges. No hidden costs, absolute transparency, maximum savings.</p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="mgs-carousel-slide">
+              <div class="mgs-why-card">
+                <div class="mgs-why-icon-wrapper">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 8l-4 4h8zM12 16l-4-4h8z" />
+                  </svg>
+                </div>
+                <h3>BIS 916 Hallmark Purity</h3>
+                <p>Exchange your matured scheme weight with pure, hallmarked 22K/24K gold jewellery certified by government standards (BIS 916 & HUID).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mgs-carousel-dots" id="why-carousel-dots"></div>
+      </div>
+    </div>
+
+    <!-- ===== 3 SIMPLE STEPS TIMELINE ===== -->
+    <div class="mgs-steps-section animate-in">
+      <div class="section-header">
+        <span class="label">Simple Path to Gold</span>
+        <h2>3 Steps to Own Your Dream Jewellery</h2>
+        <div class="section-underline"></div>
+      </div>
+
+      <div class="mgs-timeline-container">
+        <div class="mgs-timeline-line"></div>
+
+        <!-- Step 1 -->
+        <div class="mgs-timeline-step animate-in">
+          <div class="mgs-step-badge">01</div>
+          <div class="mgs-step-graphic-container">
+            <div class="mgs-step-graphic">
+              <svg viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="175" cy="125" r="90" fill="url(#gold-glow)" opacity="0.18" />
+                <rect x="50" y="100" width="160" height="110" rx="8" fill="#FFFFFF" stroke="var(--gold)" stroke-width="2" />
+                <path d="M40 100 L220 100 L200 80 L60 80 Z" fill="url(#gold-grad-svg)" />
+                <circle cx="70" cy="100" r="5" fill="#FFFFFF" />
+                <circle cx="100" cy="100" r="5" fill="#FFFFFF" />
+                <circle cx="130" cy="100" r="5" fill="#FFFFFF" />
+                <circle cx="160" cy="100" r="5" fill="#FFFFFF" />
+                <circle cx="190" cy="100" r="5" fill="#FFFFFF" />
+                <rect x="110" y="140" width="40" height="70" rx="4" fill="var(--section-contrast)" stroke="var(--gold)" stroke-width="1.5" />
+                <circle cx="130" cy="175" r="3" fill="var(--gold-dim)" />
+                <rect x="70" y="130" width="30" height="40" rx="3" fill="#FAF9F6" stroke="var(--border-bright)" stroke-width="1" />
+                <rect x="160" y="130" width="30" height="40" rx="3" fill="#FAF9F6" stroke="var(--border-bright)" stroke-width="1" />
+                <rect x="230" y="60" width="70" height="140" rx="10" fill="#1A1A1A" stroke="var(--gold)" stroke-width="2" />
+                <rect x="235" y="70" width="60" height="120" rx="6" fill="#FFFFFF" />
+                <rect x="245" y="85" width="40" height="12" rx="3" fill="var(--gold-dim)" />
+                <rect x="245" y="105" width="40" height="6" rx="2" fill="var(--charcoal-mid)" />
+                <rect x="245" y="115" width="30" height="6" rx="2" fill="var(--charcoal-mid)" />
+                <path d="M225 125 L245 125" stroke="var(--gold)" stroke-width="2" stroke-dasharray="4 4" />
+                <circle cx="225" cy="125" r="4" fill="var(--gold-bright)" />
+                <defs>
+                  <radialGradient id="gold-glow" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="var(--gold-bright)" stop-opacity="0.5"/>
+                    <stop offset="100%" stop-color="var(--gold-bright)" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="gold-grad-svg" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#8F7124" />
+                    <stop offset="50%" stop-color="#B5964D" />
+                    <stop offset="100%" stop-color="#6B541A" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div class="mgs-step-info-container">
+            <h3 class="mgs-step-title">Enrol & Select Your Plan</h3>
+            <p class="mgs-step-desc">Initiate your gold accumulation journey. Choose our 12-Month Plan (₹1,000/mo) or 15-Month Plan (₹2,000/mo) that matches your investment goals. Pre-register for our upcoming 18-Month Elite Plan to unlock special benefits.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="mgs-timeline-step animate-in">
+          <div class="mgs-step-badge">02</div>
+          <div class="mgs-step-graphic-container">
+            <div class="mgs-step-graphic">
+              <svg viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="175" cy="125" r="90" fill="url(#gold-glow)" opacity="0.18" />
+                <rect x="90" y="80" width="170" height="100" rx="10" fill="url(#gold-grad-svg)" stroke="#FFFFFF" stroke-width="2" />
+                <rect x="110" y="100" width="35" height="25" rx="4" fill="#FFFFFF" opacity="0.8" />
+                <rect x="110" y="145" width="80" height="8" rx="2" fill="#FFFFFF" opacity="0.6" />
+                <rect x="110" y="157" width="40" height="6" rx="2" fill="#FFFFFF" opacity="0.4" />
+                <circle cx="220" cy="150" r="12" fill="#FFFFFF" opacity="0.3" />
+                <circle cx="232" cy="150" r="12" fill="#FFFFFF" opacity="0.2" />
+                <g transform="translate(40, 110)">
+                  <ellipse cx="20" cy="40" rx="15" ry="6" fill="var(--gold-dim)" stroke="var(--gold-bright)" stroke-width="1" />
+                  <ellipse cx="20" cy="35" rx="15" ry="6" fill="var(--gold)" stroke="var(--gold-bright)" stroke-width="1" />
+                  <ellipse cx="20" cy="30" rx="15" ry="6" fill="var(--gold-bright)" stroke="#FFFFFF" stroke-width="1" />
+                </g>
+                <path d="M270 200 C270 170, 290 160, 290 140" stroke="var(--gold)" stroke-width="1.5" />
+                <circle cx="290" cy="140" r="4" fill="var(--gold-bright)" />
+                <path d="M280 180 C280 165, 305 160, 305 150" stroke="var(--gold-dim)" stroke-width="1" />
+                <circle cx="305" cy="150" r="3" fill="var(--gold)" />
+              </svg>
+            </div>
+          </div>
+          <div class="mgs-step-info-container">
+            <h3 class="mgs-step-title">Accumulate Systematically</h3>
+            <p class="mgs-step-desc">Make easy and secure monthly payments for 12 or 15 months via Cash, UPI, Card, Net Banking, or in-store. Track your balance anytime with instant confirmation alerts.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="mgs-timeline-step animate-in">
+          <div class="mgs-step-badge">03</div>
+          <div class="mgs-step-graphic-container">
+            <div class="mgs-step-graphic">
+              <svg viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="175" cy="125" r="90" fill="url(#gold-glow)" opacity="0.18" />
+                <g transform="translate(120, 60)" stroke="url(#gold-grad-svg)" stroke-width="14" stroke-linecap="round">
+                  <line x1="100" y1="20" x2="20" y2="110" />
+                  <circle cx="25" cy="30" r="18" stroke-width="10" fill="none" />
+                  <circle cx="95" cy="100" r="18" stroke-width="10" fill="none" />
+                </g>
+                <path d="M80 80 L83 88 L91 91 L83 94 L80 102 L77 94 L69 91 L77 88 Z" fill="var(--gold-bright)" />
+                <path d="M260 140 L263 148 L271 151 L263 154 L260 162 L257 154 L249 151 L257 148 Z" fill="var(--gold)" />
+                <path d="M240 60 L242 65 L247 67 L242 69 L240 74 L238 69 L233 67 L238 65 Z" fill="var(--gold-bright)" />
+              </svg>
+            </div>
+          </div>
+          <div class="mgs-step-info-container">
+            <h3 class="mgs-step-title">Redeem & Claim Your Bonus</h3>
+            <p class="mgs-step-desc">Upon maturity, MGS adds your free bonus installment (+₹1,000 / +₹2,000) and waives all making charges! Walk out with your pure 22K/24K gold ornaments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ALL OFFERS GRID -->
     <div class="section-header animate-in mt-20">
       <span class="label">Our Offers</span>
@@ -531,6 +1000,13 @@
       <div class="footer-hallmarks"><span>HUID HALLMARK</span><span>BIS 916</span><span>22K PURE GOLD</span></div>
     </div>
   </footer>
+
+  <!-- Lightbox Modal for Savings Schemes Poster -->
+  <div id="mgs-poster-modal" class="mgs-lightbox-modal">
+    <span class="mgs-lightbox-close" id="mgs-lightbox-close">&times;</span>
+    <img class="mgs-lightbox-content" id="lightbox-img" src="" alt="MGS Scheme Poster Full Size">
+    <div id="mgs-lightbox-caption">Click anywhere to close</div>
+  </div>
 
   <script src="global.js?v=1.1"></script>
   <script>
@@ -666,6 +1142,139 @@
     }
 
     loadOffers();
+
+    // ==========================================
+    // WHY CHOOSE CAROUSEL LOGIC
+    // ==========================================
+    function initWhyCarousel() {
+      const track = document.getElementById('why-carousel-track');
+      const dotsContainer = document.getElementById('why-carousel-dots');
+      if (!track || !dotsContainer) return;
+
+      const slides = Array.from(track.children);
+      const dotCount = slides.length;
+      let currentIndex = 0;
+      let slideInterval;
+
+      // Render Dots
+      dotsContainer.innerHTML = '';
+      for (let i = 0; i < dotCount; i++) {
+        const dot = document.createElement('button');
+        dot.className = `mgs-carousel-dot ${i === 0 ? 'active' : ''}`;
+        dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+        dotsContainer.appendChild(dot);
+
+        dot.addEventListener('click', () => {
+          clearInterval(slideInterval);
+          moveToSlide(i);
+          startAutoSlide();
+        });
+      }
+
+      const dots = Array.from(dotsContainer.children);
+
+      function moveToSlide(index) {
+        if (index < 0) index = dotCount - 1;
+        if (index >= dotCount) index = 0;
+        
+        track.style.transform = `translateX(-${index * 100}%)`;
+        dots[currentIndex].classList.remove('active');
+        dots[index].classList.add('active');
+        currentIndex = index;
+      }
+
+      function startAutoSlide() {
+        slideInterval = setInterval(() => {
+          moveToSlide(currentIndex + 1);
+        }, 5000);
+      }
+
+      // Touch / Swipe Navigation
+      let startX = 0;
+      let isDragging = false;
+
+      track.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+        clearInterval(slideInterval);
+      }, { passive: true });
+
+      track.addEventListener('touchend', (e) => {
+        if (!isDragging) return;
+        const endX = e.changedTouches[0].clientX;
+        const diffX = startX - endX;
+
+        if (Math.abs(diffX) > 50) {
+          if (diffX > 0) {
+            moveToSlide(currentIndex + 1);
+          } else {
+            moveToSlide(currentIndex - 1);
+          }
+        }
+        isDragging = false;
+        startAutoSlide();
+      }, { passive: true });
+
+      // Init Auto Slide
+      startAutoSlide();
+    }
+
+    // ==========================================
+    // LIGHTBOX MODAL LOGIC FOR POSTER
+    // ==========================================
+    function initPosterLightbox() {
+      const adCard = document.getElementById('savings-ad-card');
+      const modal = document.getElementById('mgs-poster-modal');
+      const modalImg = document.getElementById('lightbox-img');
+      const closeBtn = document.getElementById('mgs-lightbox-close');
+
+      if (!adCard || !modal || !modalImg) return;
+
+      adCard.addEventListener('click', (e) => {
+        // Prevent opening if the user clicked the WhatsApp button directly
+        if (e.target.closest('.btn-gold')) return;
+
+        const img = adCard.querySelector('img');
+        if (img) {
+          modalImg.src = img.src;
+          modal.style.display = 'block';
+          setTimeout(() => {
+            modal.classList.add('show');
+          }, 10);
+          document.body.style.overflow = 'hidden'; // Lock background scrolling
+        }
+      });
+
+      function closeModal() {
+        modal.classList.remove('show');
+        setTimeout(() => {
+          modal.style.display = 'none';
+          document.body.style.overflow = ''; // Restore scrolling
+        }, 400);
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      modal.addEventListener('click', (e) => {
+        if (e.target !== modalImg) {
+          closeModal();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+          closeModal();
+        }
+      });
+    }
+
+    // Call on DOMContentLoaded / load
+    document.addEventListener('DOMContentLoaded', () => {
+      initWhyCarousel();
+      initPosterLightbox();
+    });
+    // Also call immediately just in case
+    initWhyCarousel();
+    initPosterLightbox();
   </script>
 </body>
 

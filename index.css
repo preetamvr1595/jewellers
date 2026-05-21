@@ -213,6 +213,8 @@ body { padding-top: calc(2.1rem + 4.5rem); }
 }
 .strip-value {
   font-family: var(--font-serif);
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
   font-size: 1.6rem;
   color: var(--gold-bright);
   line-height: 1;
@@ -524,6 +526,8 @@ body { padding-top: calc(2.1rem + 4.5rem); }
 .overlay-stat { text-align: center; }
 .stat-num {
   font-family: var(--font-serif);
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
   font-size: 1.8rem;
   background: var(--gold-gradient);
   -webkit-background-clip: text;
@@ -623,6 +627,8 @@ body { padding-top: calc(2.1rem + 4.5rem); }
 }
 .calc-mini-value {
   font-family: var(--font-serif);
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum";
   font-size: 1.5rem;
   background: var(--gold-gradient);
   -webkit-background-clip: text;
