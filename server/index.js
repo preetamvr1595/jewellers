@@ -107,24 +107,37 @@ const startServer = async () => {
       }
 
       if (backup && backup.data) {
-        const localProductsCount = (localData && localData.products) ? localData.products.length : 0;
-        const backupProductsCount = (backup.data && backup.data.products) ? backup.data.products.length : 0;
+        // Perform a Smart Merge to prevent overwriting live admin changes
+        const mergedData = { ...backup.data };
+        
+        // Extract products
+        const backupProducts = backup.data.products || [];
+        const localProducts = (localData && localData.products) ? localData.products : [];
 
-        console.log(`[Database] Products count - Local: ${localProductsCount}, MongoDB Atlas: ${backupProductsCount}`);
+        // Check for new products in localData that do not exist in backup by _id
+        const backupProductIds = new Set(backupProducts.map(p => p._id));
+        const newProductsToAdd = localProducts.filter(p => !backupProductIds.has(p._id));
 
-        if (localProductsCount > backupProductsCount) {
-          console.log('[Database] Local data.json has MORE products than MongoDB Atlas backup. Syncing local database to Atlas...');
+        console.log(`[Database] Products - Local: ${localProducts.length}, MongoDB Atlas: ${backupProducts.length}.`);
+
+        if (newProductsToAdd.length > 0) {
+          console.log(`[Database] Found ${newProductsToAdd.length} new local products to add. Smart-merging to Atlas...`);
+          // Prepend new local products to preserve their order/appearance at the top
+          mergedData.products = [...newProductsToAdd, ...backupProducts];
+          
           await DBBackup.updateOne(
             { key: 'mgs_db_backup' },
-            { data: localData, updatedAt: new Date() },
+            { data: mergedData, updatedAt: new Date() },
             { upsert: true }
           );
-          console.log('[Database] Successfully updated MongoDB Atlas backup with local database.');
+          console.log('[Database] MongoDB Atlas database successfully updated with merged products.');
         } else {
-          console.log('[Database] Restoring data from MongoDB Atlas backup...');
-          fs.writeFileSync(dataPath, JSON.stringify(backup.data, null, 2));
-          console.log('[Database] Successfully restored data from MongoDB Atlas backup.');
+          console.log('[Database] No new local products to merge.');
         }
+
+        // Write the merged data back to the server data.json
+        fs.writeFileSync(dataPath, JSON.stringify(mergedData, null, 2));
+        console.log('[Database] Successfully restored/merged database to local data.json.');
       } else {
         console.log('[Database] No backup found in MongoDB.');
         if (localData) {
