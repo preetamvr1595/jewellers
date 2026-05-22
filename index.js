@@ -1,4 +1,4 @@
-/* ===== INDEX.JS — Homepage Logic ===== */
+/* ===== INDEX.JS \u2014 Homepage Logic ===== */
 
 // Dynamic content loaders
 let products = [];
@@ -26,7 +26,7 @@ async function loadProducts() {
       hallmark: p.hallmark || 'HUID',
       purity: p.purity || '',
       weight: p.weight || '',
-      priceLabel: (p.price ? '₹' + p.price.toLocaleString('en-IN') : (p.priceLabel || 'Inquire for Price')),
+      priceLabel: (p.price ? '\u20b9' + p.price.toLocaleString('en-IN') : (p.priceLabel || 'Inquire for Price')),
       desc: p.description || p.desc || ''
     }));
     
@@ -86,8 +86,8 @@ function renderActiveOffer(offer) {
         ${offer.extraValue ? `<div class="offer-pill amber">Extra ${offer.extraValue} on Old Gold</div>` : ''}
       </div>
       <div class="offer-actions">
-        <a href="https://wa.me/919876543210?text=Hello!%20I'm%20interested%20in%20the%20${encodeURIComponent(offer.title)}" target="_blank" class="btn btn-whatsapp" id="offer-whatsapp-btn">✦ Claim on WhatsApp</a>
-        <a href="offers.html" class="btn btn-outline">All Offers ▸</a>
+        <a href="https://wa.me/917892314633?text=Hello!%20I'm%20interested%20in%20the%20${encodeURIComponent(offer.title)}" target="_blank" class="btn btn-whatsapp" id="offer-whatsapp-btn">\u2726 Claim on WhatsApp</a>
+        <a href="offers.html" class="btn btn-outline">All Offers \u25b8</a>
       </div>
     </div>
   `;
@@ -101,7 +101,20 @@ function renderActiveOffer(offer) {
 let activeFilter = 'bridal';
 
 function getWhatsAppMsg(productName) {
-  return `https://wa.me/919876543210?text=Hello%20MGS%20Jewellery!%20I%27m%20interested%20in%20the%20*${encodeURIComponent(productName)}*.%20Please%20share%20the%20current%20price%20and%20availability.`;
+  const baseMsg = `Hello MGS Jewellery! I'm interested in the *${productName}*. Please share the current price and availability.`;
+  const welcomeMsg = 
+    `\n\nWelcome to MGS Jewellerys, Davanagere \u2728\n\n` +
+    `Thank you for contacting us. We are pleased to assist you with our exclusive jewellery collections and services.\n\n` +
+    `By continuing this conversation, you agree to our privacy policy regarding the collection and processing of your information.\n\n` +
+    `How may we assist you today?\n\n` +
+    `\u0031\uFE0F\u20E3 Today\u2019s Gold Rate\n` +
+    `\u0032\uFE0F\u20E3 Store Location\n` +
+    `\u0033\uFE0F\u20E3 Gold Savings Scheme\n` +
+    `\u0034\uFE0F\u20E3 Bridal Jewellery Collections\n` +
+    `\u0035\uFE0F\u20E3 Diamond Jewellery\n` +
+    `\u0036\uFE0F\u20E3 Customer Support Assistance\n\n` +
+    `Please reply with the option number or type your query below. We look forward to serving you.`;
+  return `https://wa.me/917892314633?text=${encodeURIComponent(baseMsg + welcomeMsg)}`;
 }
 
 
@@ -125,7 +138,7 @@ document.querySelectorAll('.hero-thumb').forEach(thumb => {
       heroImg.style.transform = 'scale(1.05)';
       setTimeout(() => {
         heroImg.src = thumb.dataset.img;
-        heroImg.alt = thumb.dataset.name + ' — HUID/BIS Hallmark, MGS Jewellerys';
+        heroImg.alt = thumb.dataset.name + ' \u2014 HUID/BIS Hallmark, MGS Jewellerys';
         heroImg.style.opacity = '1';
         heroImg.style.transform = 'scale(1)';
       }, 300);
@@ -168,7 +181,7 @@ window.calcMiniGold = function() {
   const total = weight * rate * (1 + wastage);
   const resultEl = document.getElementById('mini-result');
   if (resultEl) {
-    resultEl.textContent = '₹' + Math.round(total).toLocaleString('en-IN');
+    resultEl.textContent = '\u20b9' + Math.round(total).toLocaleString('en-IN');
   }
 }
 

@@ -43,8 +43,22 @@ app.get('/robots.txt', (req, res) => {
   res.sendFile(path.resolve(rootPath, 'robots.txt'));
 });
 
-// Serve top-level static site
-app.use('/', express.static(rootPath))
+// Serve top-level static site with custom headers to prevent aggressive caching and force UTF-8 encoding
+app.use('/', express.static(rootPath, {
+  setHeaders: (res, filePath) => {
+    // Force UTF-8 character encoding for HTML, JS and CSS to ensure emojis and ticks render correctly
+    if (filePath.endsWith('.html')) {
+      res.setHeader('Content-Type', 'text/html; charset=utf-8');
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    } else if (filePath.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    } else if (filePath.endsWith('.css')) {
+      res.setHeader('Content-Type', 'text/css; charset=utf-8');
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    }
+  }
+}))
 
 // serve uploaded files
 app.use('/uploads', express.static(path.resolve(rootPath, 'server', 'uploads')))

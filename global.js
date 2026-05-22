@@ -1,8 +1,8 @@
-/* ===== GLOBAL.JS — Shared Logic Across All Pages ===== */
+/* ===== GLOBAL.JS \u2014 Shared Logic Across All Pages ===== */
 
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // NAV SCROLL BEHAVIOR
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 const navbar = document.getElementById('site-navbar');
 if (navbar) {
   window.addEventListener('scroll', () => {
@@ -14,9 +14,9 @@ if (navbar) {
   });
 }
 
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // MOBILE MENU
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileOverlay = document.getElementById('mobile-overlay');
@@ -37,9 +37,9 @@ hamburgerBtn?.addEventListener('click', openMenu);
 menuClose?.addEventListener('click', closeMenu);
 mobileOverlay?.addEventListener('click', closeMenu);
 
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // SCROLL ANIMATION OBSERVER
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 window.animObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -57,9 +57,9 @@ window.triggerAnimations = () => {
 
 window.triggerAnimations();
 
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // DYNAMIC SETTINGS & GOLD RATES
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 window.mgsSettings = {};
 window.liveGoldRates = { 22: 14225, 24: 14936, silver: 285 };
 
@@ -94,7 +94,7 @@ window.resolveImageUrl = (url) => {
 };
 
 function formatINR(amount) {
-  return '₹' + Math.round(amount).toLocaleString('en-IN');
+  return '\u20b9' + Math.round(amount).toLocaleString('en-IN');
 }
 
 async function fetchSettings() {
@@ -134,9 +134,9 @@ async function updateTicker() {
 
     if (data.tickerText) {
       const el = document.getElementById('ticker-custom');
-      if (el) el.textContent = '✦ ' + data.tickerText + ' ✦';
+      if (el) el.textContent = '\u2726 ' + data.tickerText + ' \u2726';
       const elDup = document.getElementById('ticker-custom-dup');
-      if (elDup) elDup.textContent = '✦ ' + data.tickerText + ' ✦';
+      if (elDup) elDup.textContent = '\u2726 ' + data.tickerText + ' \u2726';
     }
 
     window.liveGoldRates = { 22: data.gold22, 24: data.gold24, silver: data.silver };
@@ -154,9 +154,9 @@ fetchSettings();
 updateTicker();
 setInterval(updateTicker, 60000); // Every 1 minute
 
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // TOAST NOTIFICATION
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function showToast(message, type = 'success') {
   const existing = document.querySelector('.mgs-toast');
   if (existing) existing.remove();
@@ -195,9 +195,9 @@ function showToast(message, type = 'success') {
   }, 4000);
 }
 
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // DYNAMIC FLOATING RATES WIDGET INJECTION
-// ────────────────────────────────────────
+// \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function injectFloatingRatesWidget() {
   // Prevent duplicate injection
   if (document.getElementById('mgs-rates-tab')) return;
@@ -222,44 +222,44 @@ function injectFloatingRatesWidget() {
           <h3 class="mgs-panel-title">Today's Rates</h3>
           <div class="mgs-panel-date" id="mgs-panel-date">Loading date...</div>
         </div>
-        <button class="mgs-panel-close-btn" id="mgs-panel-close" aria-label="Close rates panel">✕</button>
+        <button class="mgs-panel-close-btn" id="mgs-panel-close" aria-label="Close rates panel">\u2715</button>
       </div>
       
       <div class="mgs-rates-panel-body">
         <!-- Rate Card 1: 22K Gold -->
         <div class="mgs-rate-card gold-22k">
-          <div class="mgs-rate-card-icon">🪙</div>
+          <div class="mgs-rate-card-icon">\ud83e\ude99</div>
           <div class="mgs-rate-card-details">
             <span class="mgs-rate-label">Gold Rate (22K)</span>
-            <span class="mgs-rate-value" id="mgs-float-gold22">₹6,842 <span class="mgs-unit">/ gram</span></span>
+            <span class="mgs-rate-value" id="mgs-float-gold22">\u20b96,842 <span class="mgs-unit">/ gram</span></span>
           </div>
-          <span class="mgs-rate-change positive" id="mgs-float-gold22c">▲ 0.4%</span>
+          <span class="mgs-rate-change positive" id="mgs-float-gold22c">\u25b2 0.4%</span>
         </div>
 
         <!-- Rate Card 2: 24K Gold -->
         <div class="mgs-rate-card gold-24k">
-          <div class="mgs-rate-card-icon">👑</div>
+          <div class="mgs-rate-card-icon">\ud83d\udc51</div>
           <div class="mgs-rate-card-details">
             <span class="mgs-rate-label">Gold Rate (24K)</span>
-            <span class="mgs-rate-value" id="mgs-float-gold24">₹7,490 <span class="mgs-unit">/ gram</span></span>
+            <span class="mgs-rate-value" id="mgs-float-gold24">\u20b97,490 <span class="mgs-unit">/ gram</span></span>
           </div>
-          <span class="mgs-rate-change positive" id="mgs-float-gold24c">▲ 0.3%</span>
+          <span class="mgs-rate-change positive" id="mgs-float-gold24c">\u25b2 0.3%</span>
         </div>
 
         <!-- Rate Card 3: Silver -->
         <div class="mgs-rate-card silver-rate">
-          <div class="mgs-rate-card-icon">🥈</div>
+          <div class="mgs-rate-card-icon">\ud83e\udd48</div>
           <div class="mgs-rate-card-details">
             <span class="mgs-rate-label">Silver Rate</span>
-            <span class="mgs-rate-value" id="mgs-float-silver">₹89.2 <span class="mgs-unit">/ gram</span></span>
+            <span class="mgs-rate-value" id="mgs-float-silver">\u20b989.2 <span class="mgs-unit">/ gram</span></span>
           </div>
-          <span class="mgs-rate-change negative" id="mgs-float-silverc">▼ 0.1%</span>
+          <span class="mgs-rate-change negative" id="mgs-float-silverc">\u25bc 0.1%</span>
         </div>
       </div>
       
       <div class="mgs-rates-panel-footer">
-        <div class="mgs-footer-note">✦ Rates updated dynamically ✦</div>
-        <a href="calculator.html" class="mgs-calc-shortcut-btn">Use Gold Calculator ▸</a>
+        <div class="mgs-footer-note">\u2726 Rates updated dynamically \u2726</div>
+        <a href="calculator.html" class="mgs-calc-shortcut-btn">Use Gold Calculator \u25b8</a>
       </div>
     </div>
 
@@ -317,7 +317,7 @@ window.updateFloatRates = () => {
   const g24Val = document.getElementById('mgs-float-gold24');
   const silVal = document.getElementById('mgs-float-silver');
 
-  const fmt = (v, unit = '/ gram') => `₹${Math.round(v).toLocaleString('en-IN')} <span class="mgs-unit">${unit}</span>`;
+  const fmt = (v, unit = '/ gram') => `\u20b9${Math.round(v).toLocaleString('en-IN')} <span class="mgs-unit">${unit}</span>`;
 
   if (window.liveGoldRates) {
     let r22 = window.liveGoldRates[22] || 6842;
@@ -330,9 +330,54 @@ window.updateFloatRates = () => {
   }
 };
 
+// Function to dynamically initialize gold saving schemes WhatsApp links
+// using safe ASCII and WhatsApp native bold markdown to ensure 100% robust rendering across all devices.
+function initSavingSchemeWhatsAppLinks() {
+  const phone = '917892314633';
+  
+  const commonPlanText = 
+    `\n\n\u2728 *Introducing the MGS Jewellerys Aurum Advantage Saving Plan* \u2728\n\n` +
+    `Turn your jewellery dreams into reality with our exclusive monthly savings scheme designed for smart and secure gold investments.\n\n` +
+    `\u2705 Flexible Monthly Savings Plans\n` +
+    `\u2705 Special Bonus Benefits from MGS\n` +
+    `\u2705 No Making Charges\n` +
+    `\u2705 Exclusive Jewellery Purchase Advantages\n\n` +
+    `\uD83D\uDCB0 *Plan Options:*\n` +
+    `\uD83D\uDD38 \u20B91000 per month - 12 Months\n` +
+    `\uD83D\uDD38 \u20B92000 per month - 15 Months\n\n` +
+    `Begin your savings journey today and enjoy premium benefits with MGS Jewellerys.\n\n` +
+    `\uD83D\uDCCD Visit MGS Jewellerys, Davanagere\n` +
+    `\uD83D\uDCDE Contact us for enrollment and complete scheme details.`;
+
+  const bannerText = `Hello MGS! I'd like to know more details about your Aurum Advantage Gold Saving Schemes.` + commonPlanText;
+  const plan12Text = `Hello MGS! I'd like to enroll in the Standard 12-Month Gold Saving Scheme (\u20B91,000/month).` + commonPlanText;
+  const plan15Text = `Hello MGS! I'd like to enroll in the Premium 15-Month Gold Saving Scheme (\u20B92,000/month).` + commonPlanText;
+  const plan18Text = `Hello MGS! I'm extremely interested in pre-registering for your Upcoming Elite 18-Month Scheme with No Wastage and No Making charges.` + commonPlanText;
+
+  const links = {
+    'wa-saving-ask-details': bannerText,
+    'wa-saving-enroll-12m': plan12Text,
+    'wa-saving-enroll-15m': plan15Text,
+    'wa-saving-enroll-18m': plan18Text
+  };
+
+  for (const [className, text] of Object.entries(links)) {
+    const encodedText = encodeURIComponent(text);
+    const href = `https://wa.me/${phone}?text=${encodedText}`;
+    document.querySelectorAll('.' + className).forEach(el => {
+      el.setAttribute('href', href);
+    });
+  }
+}
+
 // Hook into DOMContentLoaded
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', injectFloatingRatesWidget);
+  document.addEventListener('DOMContentLoaded', () => {
+    injectFloatingRatesWidget();
+    initSavingSchemeWhatsAppLinks();
+  });
 } else {
   injectFloatingRatesWidget();
+  initSavingSchemeWhatsAppLinks();
 }
+

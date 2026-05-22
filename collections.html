@@ -685,7 +685,7 @@
     </div>
   </footer>
 
-  <script src="global.js?v=1.1"></script>
+  <script src="global.js?v=4.1"></script>
   <script>
     /* ===== DYNAMIC PRODUCT LOADER FROM API ===== */
 
@@ -725,7 +725,7 @@
         console.error('Error loading products', e);
         document.getElementById('product-grid').innerHTML = `
       <div id="empty-state" style="display:block;grid-column:1/-1;text-align:center;padding:6rem 2rem">
-        <div style="font-size:3rem;color:var(--gold-dim);margin-bottom:1rem">◈</div>
+        <div style="font-size:3rem;color:var(--gold-dim);margin-bottom:1rem">\u25c8</div>
         <h3 style="color:var(--white-dim);font-size:1.4rem;font-family:var(--font-serif);margin-bottom:0.5rem">Unable to load products</h3>
         <p style="color:var(--gray);font-size:0.9rem">Please try again later</p>
       </div>`;
@@ -733,7 +733,20 @@
     }
 
     function getWhatsAppMsg(name) {
-      return `https://wa.me/917892314633?text=Hello%20MGS%20Jewellery!%20I%27m%20interested%20in%20the%20*${encodeURIComponent(name)}*.%20Please%20share%20the%20current%20price%20and%20availability.`;
+      const baseMsg = `Hello MGS Jewellery! I'm interested in the *${name}*. Please share the current price and availability.`;
+      const welcomeMsg = 
+        `\n\nWelcome to MGS Jewellerys, Davanagere \u2728\n\n` +
+        `Thank you for contacting us. We are pleased to assist you with our exclusive jewellery collections and services.\n\n` +
+        `By continuing this conversation, you agree to our privacy policy regarding the collection and processing of your information.\n\n` +
+        `How may we assist you today?\n\n` +
+        `\u0031\uFE0F\u20E3 Today\u2019s Gold Rate\n` +
+        `\u0032\uFE0F\u20E3 Store Location\n` +
+        `\u0033\uFE0F\u20E3 Gold Savings Scheme\n` +
+        `\u0034\uFE0F\u20E3 Bridal Jewellery Collections\n` +
+        `\u0035\uFE0F\u20E3 Diamond Jewellery\n` +
+        `\u0036\uFE0F\u20E3 Customer Support Assistance\n\n` +
+        `Please reply with the option number or type your query below. We look forward to serving you.`;
+      return `https://wa.me/917892314633?text=${encodeURIComponent(baseMsg + welcomeMsg)}`;
     }
 
     function getBadgeHTML(product) {
@@ -743,7 +756,7 @@
 
     function formatPrice(price) {
       if (!price) return 'Inquire for Price';
-      return '₹' + Math.round(price).toLocaleString('en-IN');
+      return '\u20b9' + Math.round(price).toLocaleString('en-IN');
     }
 
     function renderProducts() {
@@ -775,7 +788,7 @@
       if (filtered.length === 0) {
         grid.innerHTML = `
       <div id="empty-state" style="display:block;grid-column:1/-1;text-align:center;padding:6rem 2rem">
-        <div style="font-size:3rem;color:var(--gold-dim);margin-bottom:1rem">◈</div>
+        <div style="font-size:3rem;color:var(--gold-dim);margin-bottom:1rem">\u25c8</div>
         <h3 style="color:var(--white-dim);font-size:1.4rem;font-family:var(--font-serif);margin-bottom:0.5rem">No pieces found</h3>
         <p style="color:var(--gray);font-size:0.9rem">Try a different search or category filter</p>
       </div>`;
@@ -785,7 +798,7 @@
       grid.innerHTML = filtered.map(p => `
     <div class="product-card animate-in" data-id="${p.id}" data-cat="${p.category}">
       <div class="product-card-img image-frame">
-        <img src="${p.image}" alt="${p.name} — ${p.hallmark} Hallmark, MGS Jewellerys Davanagere" loading="lazy">
+        <img src="${p.image}" alt="${p.name} \u2014 ${p.hallmark} Hallmark, MGS Jewellerys Davanagere" loading="lazy">
         ${getBadgeHTML(p)}
       </div>
       <div class="product-card-info">
@@ -795,9 +808,9 @@
         </div>
         <h3>${p.name}</h3>
         <p class="pc-meta">${p.desc}</p>
-        <div class="pc-weight">⚖ ${p.weight}</div>
+        <div class="pc-weight">\u2696 ${p.weight}</div>
         <div class="product-card-actions">
-          <a href="${getWhatsAppMsg(p.name)}" target="_blank" class="btn btn-whatsapp" id="wa-${p.id}" style="width:100%;font-size:0.75rem;padding:0.6rem 0.9rem">✦ WhatsApp Inquiry</a>
+          <a href="${getWhatsAppMsg(p.name)}" target="_blank" class="btn btn-whatsapp" id="wa-${p.id}" style="width:100%;font-size:0.75rem;padding:0.6rem 0.9rem">\u2726 WhatsApp Inquiry</a>
         </div>
       </div>
     </div>
