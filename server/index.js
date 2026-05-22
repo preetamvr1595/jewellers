@@ -96,12 +96,46 @@ const startServer = async () => {
       }
 
       const backup = await DBBackup.findOne({ key: 'mgs_db_backup' });
+      const dataPath = path.resolve(__dirname, 'data.json');
+      let localData = null;
+      if (fs.existsSync(dataPath)) {
+        try {
+          localData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+        } catch (e) {
+          console.error('[Database] Failed to parse local data.json:', e);
+        }
+      }
+
       if (backup && backup.data) {
-        const dataPath = path.resolve(__dirname, 'data.json');
-        fs.writeFileSync(dataPath, JSON.stringify(backup.data, null, 2));
-        console.log('[Database] Successfully restored data from MongoDB Atlas backup.');
+        const localProductsCount = (localData && localData.products) ? localData.products.length : 0;
+        const backupProductsCount = (backup.data && backup.data.products) ? backup.data.products.length : 0;
+
+        console.log(`[Database] Products count - Local: ${localProductsCount}, MongoDB Atlas: ${backupProductsCount}`);
+
+        if (localProductsCount > backupProductsCount) {
+          console.log('[Database] Local data.json has MORE products than MongoDB Atlas backup. Syncing local database to Atlas...');
+          await DBBackup.updateOne(
+            { key: 'mgs_db_backup' },
+            { data: localData, updatedAt: new Date() },
+            { upsert: true }
+          );
+          console.log('[Database] Successfully updated MongoDB Atlas backup with local database.');
+        } else {
+          console.log('[Database] Restoring data from MongoDB Atlas backup...');
+          fs.writeFileSync(dataPath, JSON.stringify(backup.data, null, 2));
+          console.log('[Database] Successfully restored data from MongoDB Atlas backup.');
+        }
       } else {
-        console.log('[Database] No backup found in MongoDB. Operating with default database state.');
+        console.log('[Database] No backup found in MongoDB.');
+        if (localData) {
+          console.log('[Database] Seeding MongoDB Atlas with local data.json...');
+          await DBBackup.updateOne(
+            { key: 'mgs_db_backup' },
+            { data: localData, updatedAt: new Date() },
+            { upsert: true }
+          );
+          console.log('[Database] Successfully seeded MongoDB Atlas backup.');
+        }
       }
     } catch (err) {
       console.error('[Database] MongoDB connection or restore failed:', err);
