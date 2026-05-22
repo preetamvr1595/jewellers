@@ -1,6 +1,2136 @@
 {
   "products": [
     {
+      "_id": "prod_new_image2_anklets_0_1779446441996",
+      "name": "Payal Sleek Snake Link Anklets Set",
+      "price": 22031,
+      "description": "Perfect for traditional celebrations, these 22K gold anklets feature sweet-sounding dangling ghungroos that chime beautifully with every step.",
+      "images": [
+        "assets/new_image2/anklets/02687628-b68a-4c0f-a98b-c3a6bbb4dfe0.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "2.80g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.996Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_1_1779446441997",
+      "name": "Nupur Classic Mesh Anklets",
+      "price": 26910,
+      "description": "A sleek and lightweight payal set designed with classic snake link chains and delicate gold beads, HUID hallmarked for premium assurance.",
+      "images": [
+        "assets/new_image2/anklets/053ed082-c07b-4356-b2cb-12735a43acfe.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "3.42g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_2_1779446441997",
+      "name": "Traditional Double Strand Payal Set",
+      "price": 31788,
+      "description": "Exquisite craftsmanship meets classical design; these double-strand gold anklets are detailed with intricate filigree borders and secure locks.",
+      "images": [
+        "assets/new_image2/anklets/0e4ecad2-d82b-4428-ac6a-8f5c2ed2f984.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "4.04g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_3_1779446441997",
+      "name": "Elegant Sankalp Foot Chain",
+      "price": 36666,
+      "description": "Designed in traditional Davanagere style, this payal pair adds a beautiful metallic shine and an elegant touch to your festive ethnic look.",
+      "images": [
+        "assets/new_image2/anklets/1b599159-ac65-4ca8-ab96-2ff811a12d50.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "4.66g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_4_1779446441997",
+      "name": "Swarna Beaded Link Payal Pair",
+      "price": 41545,
+      "description": "Perfect for traditional celebrations, these 22K gold anklets feature sweet-sounding dangling ghungroos that chime beautifully with every step.",
+      "images": [
+        "assets/new_image2/anklets/2b84521c-5d63-4697-9913-f151ef3780c1.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "5.28g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_5_1779446441997",
+      "name": "Kanak Filigree Bordered Anklets Set",
+      "price": 46423,
+      "description": "A sleek and lightweight payal set designed with classic snake link chains and delicate gold beads, HUID hallmarked for premium assurance.",
+      "images": [
+        "assets/new_image2/anklets/364a1f17-9ff6-4079-9f8e-81bb39140dc8.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "5.90g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_6_1779446441997",
+      "name": "Dailywear Ghungroo Cluster Anklets",
+      "price": 51301,
+      "description": "Exquisite craftsmanship meets classical design; these double-strand gold anklets are detailed with intricate filigree borders and secure locks.",
+      "images": [
+        "assets/new_image2/anklets/5bf62e32-fca7-4865-a0bf-e0822e0ca15f.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "6.52g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_7_1779446441997",
+      "name": "Ghungroo Royal Leafy Payal Set",
+      "price": 56180,
+      "description": "Designed in traditional Davanagere style, this payal pair adds a beautiful metallic shine and an elegant touch to your festive ethnic look.",
+      "images": [
+        "assets/new_image2/anklets/65b57e87-beb0-4f2e-b2e3-fd16d30c88b7.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "7.14g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_8_1779446441997",
+      "name": "Kasula Sleek Snake Link Foot Chain",
+      "price": 61058,
+      "description": "Perfect for traditional celebrations, these 22K gold anklets feature sweet-sounding dangling ghungroos that chime beautifully with every step.",
+      "images": [
+        "assets/new_image2/anklets/832e6bd9-9287-4921-adb5-6e10764156b8.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "7.76g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_9_1779446441997",
+      "name": "Royal Classic Mesh Payal Pair",
+      "price": 65936,
+      "description": "A sleek and lightweight payal set designed with classic snake link chains and delicate gold beads, HUID hallmarked for premium assurance.",
+      "images": [
+        "assets/new_image2/anklets/8f52d129-3e34-4d45-9fab-98e460dab0d7.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "8.38g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_10_1779446441997",
+      "name": "Adrika Double Strand Anklets Set",
+      "price": 70815,
+      "description": "Exquisite craftsmanship meets classical design; these double-strand gold anklets are detailed with intricate filigree borders and secure locks.",
+      "images": [
+        "assets/new_image2/anklets/a72a9eda-26aa-45e4-ab14-3e03e1040ce7.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "9.00g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_11_1779446441997",
+      "name": "Aura Sankalp Anklets",
+      "price": 75693,
+      "description": "Designed in traditional Davanagere style, this payal pair adds a beautiful metallic shine and an elegant touch to your festive ethnic look.",
+      "images": [
+        "assets/new_image2/anklets/b706d683-099d-46f7-9a12-70a4932d9b6c.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "9.62g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_12_1779446441997",
+      "name": "Payal Beaded Link Payal Set",
+      "price": 80571,
+      "description": "Perfect for traditional celebrations, these 22K gold anklets feature sweet-sounding dangling ghungroos that chime beautifully with every step.",
+      "images": [
+        "assets/new_image2/anklets/c47adafe-34cc-4339-8855-9799df2a6c74.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "10.24g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_13_1779446441997",
+      "name": "Nupur Filigree Bordered Foot Chain",
+      "price": 22503,
+      "description": "A sleek and lightweight payal set designed with classic snake link chains and delicate gold beads, HUID hallmarked for premium assurance.",
+      "images": [
+        "assets/new_image2/anklets/c6503f85-9b7c-4076-b175-d88754be662f.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "2.86g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_14_1779446441997",
+      "name": "Traditional Ghungroo Cluster Payal Pair",
+      "price": 27382,
+      "description": "Exquisite craftsmanship meets classical design; these double-strand gold anklets are detailed with intricate filigree borders and secure locks.",
+      "images": [
+        "assets/new_image2/anklets/e9534e37-7705-4f4e-82af-394bfc8d1671.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "3.48g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_anklets_15_1779446441997",
+      "name": "Elegant Royal Leafy Anklets Set",
+      "price": 32260,
+      "description": "Designed in traditional Davanagere style, this payal pair adds a beautiful metallic shine and an elegant touch to your festive ethnic look.",
+      "images": [
+        "assets/new_image2/anklets/f850ab6d-c915-4e13-a8f3-25c6c133b1a3.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "4.10g",
+      "category": "anklets",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.997Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_0_1779446441998",
+      "name": "Heritage Plain Polished Bangles Pair",
+      "price": 48359,
+      "description": "Meticulously carved in heavy 22K gold, these traditional kadas highlight majestic temple nakshi work and peacock carvings on a matte finish.",
+      "images": [
+        "assets/new_image2/bangles/0003f4e4-293a-4f95-967c-204169360a7b.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "6.20g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_1_1779446441998",
+      "name": "Kanak Gem-studded Bangle",
+      "price": 59669,
+      "description": "An elegant set of filigree embossed bangles designed to add effortless sophistication. BIS hallmarked and perfectly polished for a brilliant gleam.",
+      "images": [
+        "assets/new_image2/bangles/05f8a004-23e6-48e5-8f1f-9f265d16568b.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "7.65g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_2_1779446441998",
+      "name": "Swarna Broad Cuff Bangles Set",
+      "price": 70979,
+      "description": "These dual twisted-rope patterned gold bangles are highly versatile and ideal for daily wear or elegant styling, showing exceptional durability.",
+      "images": [
+        "assets/new_image2/bangles/124c5148-5cb7-46b5-9b4b-257621acc516.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "9.10g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_3_1779446441998",
+      "name": "Imperial Kundan Inlaid Kadas Pair",
+      "price": 82289,
+      "description": "Featuring bright and vibrant peacock enamel work, this grand bangle set is a stunning blend of heritage art and modern aesthetic luxury.",
+      "images": [
+        "assets/new_image2/bangles/179c2c42-0d97-4086-97b4-fb8e5b4e4c4a.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "10.55g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_4_1779446441998",
+      "name": "Vedic Nakshi Carved Bangle Pair",
+      "price": 93599,
+      "description": "Meticulously carved in heavy 22K gold, these traditional kadas highlight majestic temple nakshi work and peacock carvings on a matte finish.",
+      "images": [
+        "assets/new_image2/bangles/23069204-6b5e-4b34-863a-39c956249109.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "12.00g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_5_1779446441998",
+      "name": "Royal Filigree Embossed Bangles Pair",
+      "price": 104908,
+      "description": "An elegant set of filigree embossed bangles designed to add effortless sophistication. BIS hallmarked and perfectly polished for a brilliant gleam.",
+      "images": [
+        "assets/new_image2/bangles/253e30c6-7568-4ec8-a377-06304784876e.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "13.45g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_6_1779446441998",
+      "name": "Festive Twisted Rope Bangle",
+      "price": 116218,
+      "description": "These dual twisted-rope patterned gold bangles are highly versatile and ideal for daily wear or elegant styling, showing exceptional durability.",
+      "images": [
+        "assets/new_image2/bangles/36ec37b5-a3f0-41a9-bca7-219d8f4a6003.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "14.90g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_7_1779446441998",
+      "name": "Dailywear Peacock Enamel Bangles Set",
+      "price": 127528,
+      "description": "Featuring bright and vibrant peacock enamel work, this grand bangle set is a stunning blend of heritage art and modern aesthetic luxury.",
+      "images": [
+        "assets/new_image2/bangles/44e1adb1-41d6-4353-9dd7-f29aa741ba97.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "16.35g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_8_1779446441998",
+      "name": "Mayura Plain Polished Kadas Pair",
+      "price": 138838,
+      "description": "Meticulously carved in heavy 22K gold, these traditional kadas highlight majestic temple nakshi work and peacock carvings on a matte finish.",
+      "images": [
+        "assets/new_image2/bangles/5410640a-4064-4915-b71f-480b50fc234d (1).png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "17.80g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_9_1779446441998",
+      "name": "Devi Gem-studded Bangle Pair",
+      "price": 150148,
+      "description": "An elegant set of filigree embossed bangles designed to add effortless sophistication. BIS hallmarked and perfectly polished for a brilliant gleam.",
+      "images": [
+        "assets/new_image2/bangles/5410640a-4064-4915-b71f-480b50fc234d.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "19.25g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_10_1779446441998",
+      "name": "Lakshmi Broad Cuff Bangles Pair",
+      "price": 161458,
+      "description": "These dual twisted-rope patterned gold bangles are highly versatile and ideal for daily wear or elegant styling, showing exceptional durability.",
+      "images": [
+        "assets/new_image2/bangles/5976f3a2-515f-41c5-9eda-1024f1aeffb4.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "20.70g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_11_1779446441998",
+      "name": "Heritage Kundan Inlaid Bangle",
+      "price": 172767,
+      "description": "Featuring bright and vibrant peacock enamel work, this grand bangle set is a stunning blend of heritage art and modern aesthetic luxury.",
+      "images": [
+        "assets/new_image2/bangles/713d224f-7374-46eb-9c49-de90ed67ac46.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "22.15g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_12_1779446441998",
+      "name": "Kanak Nakshi Carved Bangles Set",
+      "price": 184077,
+      "description": "Meticulously carved in heavy 22K gold, these traditional kadas highlight majestic temple nakshi work and peacock carvings on a matte finish.",
+      "images": [
+        "assets/new_image2/bangles/765d86cc-1d26-41a7-80f8-0b9131f5f0fa.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "23.60g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_13_1779446441998",
+      "name": "Swarna Filigree Embossed Kadas Pair",
+      "price": 54989,
+      "description": "An elegant set of filigree embossed bangles designed to add effortless sophistication. BIS hallmarked and perfectly polished for a brilliant gleam.",
+      "images": [
+        "assets/new_image2/bangles/816a6d70-d8e7-440f-8db9-99f9a51f258e.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "7.05g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_14_1779446441998",
+      "name": "Imperial Twisted Rope Bangle Pair",
+      "price": 66299,
+      "description": "These dual twisted-rope patterned gold bangles are highly versatile and ideal for daily wear or elegant styling, showing exceptional durability.",
+      "images": [
+        "assets/new_image2/bangles/8ede152e-fce1-4a3c-b4b9-c844c11630db.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "8.50g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_15_1779446441998",
+      "name": "Vedic Peacock Enamel Bangles Pair",
+      "price": 77609,
+      "description": "Featuring bright and vibrant peacock enamel work, this grand bangle set is a stunning blend of heritage art and modern aesthetic luxury.",
+      "images": [
+        "assets/new_image2/bangles/9f351342-09e7-430a-95e6-d813fc3a8dd7.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "9.95g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_16_1779446441998",
+      "name": "Royal Plain Polished Bangle",
+      "price": 88919,
+      "description": "Meticulously carved in heavy 22K gold, these traditional kadas highlight majestic temple nakshi work and peacock carvings on a matte finish.",
+      "images": [
+        "assets/new_image2/bangles/a31731d1-f31a-4fd8-8bad-2d29a8f08794.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "11.40g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_17_1779446441998",
+      "name": "Festive Gem-studded Bangles Set",
+      "price": 100228,
+      "description": "An elegant set of filigree embossed bangles designed to add effortless sophistication. BIS hallmarked and perfectly polished for a brilliant gleam.",
+      "images": [
+        "assets/new_image2/bangles/a5afe388-7aa9-45f4-867a-acfcb8a2db28.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "12.85g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_18_1779446441998",
+      "name": "Dailywear Broad Cuff Kadas Pair",
+      "price": 111538,
+      "description": "These dual twisted-rope patterned gold bangles are highly versatile and ideal for daily wear or elegant styling, showing exceptional durability.",
+      "images": [
+        "assets/new_image2/bangles/b3830ce1-b4bb-4104-b71a-8b110018663e.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "14.30g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_19_1779446441998",
+      "name": "Mayura Kundan Inlaid Bangle Pair",
+      "price": 122848,
+      "description": "Featuring bright and vibrant peacock enamel work, this grand bangle set is a stunning blend of heritage art and modern aesthetic luxury.",
+      "images": [
+        "assets/new_image2/bangles/bd850eed-ed80-4e9b-8f0f-1d31039f74a9.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "15.75g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_20_1779446441998",
+      "name": "Devi Nakshi Carved Bangles Pair",
+      "price": 134158,
+      "description": "Meticulously carved in heavy 22K gold, these traditional kadas highlight majestic temple nakshi work and peacock carvings on a matte finish.",
+      "images": [
+        "assets/new_image2/bangles/c17ab487-78f9-4ce1-b254-1c45ef915330.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "17.20g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_21_1779446441998",
+      "name": "Lakshmi Filigree Embossed Bangle",
+      "price": 145468,
+      "description": "An elegant set of filigree embossed bangles designed to add effortless sophistication. BIS hallmarked and perfectly polished for a brilliant gleam.",
+      "images": [
+        "assets/new_image2/bangles/d047caa0-a895-4d6e-a3a9-cc64a11edc7d.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "18.65g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_22_1779446441998",
+      "name": "Heritage Twisted Rope Bangles Set",
+      "price": 156778,
+      "description": "These dual twisted-rope patterned gold bangles are highly versatile and ideal for daily wear or elegant styling, showing exceptional durability.",
+      "images": [
+        "assets/new_image2/bangles/ddcf8b94-880b-44e0-b3ff-ff251ea9a6cc.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "20.10g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_23_1779446441998",
+      "name": "Kanak Peacock Enamel Kadas Pair",
+      "price": 168087,
+      "description": "Featuring bright and vibrant peacock enamel work, this grand bangle set is a stunning blend of heritage art and modern aesthetic luxury.",
+      "images": [
+        "assets/new_image2/bangles/e7af4b67-af5b-4e83-9d50-6f8ff0b490eb.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "21.55g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bangles_24_1779446441998",
+      "name": "Swarna Plain Polished Bangle Pair",
+      "price": 179397,
+      "description": "Meticulously carved in heavy 22K gold, these traditional kadas highlight majestic temple nakshi work and peacock carvings on a matte finish.",
+      "images": [
+        "assets/new_image2/bangles/f5c547b6-16de-4f38-a222-722f3b038784.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "23.00g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.998Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_0_1779446441999",
+      "name": "Maharani Ruby Embedded Choker Set Bridal Haar Set",
+      "price": 151892,
+      "description": "A legendary wedding creation in 22K gold. This grand bridal set includes a premium heritage choker, a long matching haar, and coordinating nakshi jhumkas.",
+      "images": [
+        "assets/new_image2/bridal/07cd06c0-2aeb-4d84-a33f-36cfc02d6128.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "18.50g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_1_1779446441999",
+      "name": "Rajkumari Kundan Collar Set Bridal Set",
+      "price": 178576,
+      "description": "Perfect for the elegant South-Indian bride, this grand temple-style kasumalai and mango-motif set radiates royal luxury and traditional blessings.",
+      "images": [
+        "assets/new_image2/bridal/1e3600ed-ba65-43aa-b27a-10c17f34dd18.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "21.75g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_2_1779446441999",
+      "name": "Imperial Guttapusalu Set Bridal Collection",
+      "price": 205260,
+      "description": "This customer-favorite bridal set features premium rubies and emeralds inlaid in masterfully hand-beaten gold, creating a stunning heritage statement.",
+      "images": [
+        "assets/new_image2/bridal/34178f6b-067c-4ec9-ad82-03414ec9824b.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "25.00g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_3_1779446441999",
+      "name": "Vaikuntha Kasumalai Set Wedding Choker Set",
+      "price": 231944,
+      "description": "Featuring exquisite Kundan glass work and cascading pearl drops, this grand collar necklace is a timeless classic fit for a maharani.",
+      "images": [
+        "assets/new_image2/bridal/6b2646a4-38ac-4f42-ac56-fd35eaaaabfa.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "28.25g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_4_1779446441999",
+      "name": "Temple Bridal Haar Set Grand Trousseau Set",
+      "price": 258628,
+      "description": "A legendary wedding creation in 22K gold. This grand bridal set includes a premium heritage choker, a long matching haar, and coordinating nakshi jhumkas.",
+      "images": [
+        "assets/new_image2/bridal/8d6b5e67-790c-4c7a-b446-9dda58cdf533.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "31.50g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_5_1779446441999",
+      "name": "Royal Nakshi Choker Set Bridal Haar Set",
+      "price": 285311,
+      "description": "Perfect for the elegant South-Indian bride, this grand temple-style kasumalai and mango-motif set radiates royal luxury and traditional blessings.",
+      "images": [
+        "assets/new_image2/bridal/a19685ee-f732-4c88-853d-f554fa7290eb.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "34.75g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_6_1779446441999",
+      "name": "Aura Heritage Mango Haar Bridal Set",
+      "price": 311995,
+      "description": "This customer-favorite bridal set features premium rubies and emeralds inlaid in masterfully hand-beaten gold, creating a stunning heritage statement.",
+      "images": [
+        "assets/new_image2/bridal/c23b3b50-4dc2-4e26-86a5-f1bfa4fcba79.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "38.00g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_7_1779446441999",
+      "name": "Samyuktha Ruby Embedded Choker Set Bridal Collection",
+      "price": 338679,
+      "description": "Featuring exquisite Kundan glass work and cascading pearl drops, this grand collar necklace is a timeless classic fit for a maharani.",
+      "images": [
+        "assets/new_image2/bridal/c64c062f-0939-4aba-8211-0028a9702501.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "41.25g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_8_1779446441999",
+      "name": "Devi Kundan Collar Set Wedding Choker Set",
+      "price": 365363,
+      "description": "A legendary wedding creation in 22K gold. This grand bridal set includes a premium heritage choker, a long matching haar, and coordinating nakshi jhumkas.",
+      "images": [
+        "assets/new_image2/bridal/cae49fe1-ca08-4f19-85dc-20e2c3d1b370.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "44.50g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_9_1779446441999",
+      "name": "Gajraj Guttapusalu Set Grand Trousseau Set",
+      "price": 392047,
+      "description": "Perfect for the elegant South-Indian bride, this grand temple-style kasumalai and mango-motif set radiates royal luxury and traditional blessings.",
+      "images": [
+        "assets/new_image2/bridal/d2c5e41a-89df-4799-a217-0f7d7696b46e.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "47.75g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_10_1779446441999",
+      "name": "Vedic Kasumalai Set Bridal Haar Set",
+      "price": 418730,
+      "description": "This customer-favorite bridal set features premium rubies and emeralds inlaid in masterfully hand-beaten gold, creating a stunning heritage statement.",
+      "images": [
+        "assets/new_image2/bridal/eda8d088-2bb3-4413-839e-ca34e9713bb4.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "51.00g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_11_1779446441999",
+      "name": "Maharani Bridal Haar Set Bridal Set",
+      "price": 158050,
+      "description": "Featuring exquisite Kundan glass work and cascading pearl drops, this grand collar necklace is a timeless classic fit for a maharani.",
+      "images": [
+        "assets/new_image2/bridal/f44b80fe-dc8d-4819-af83-59d2f5f6d92f.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "19.25g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_12_1779446441999",
+      "name": "Rajkumari Nakshi Choker Set Bridal Collection",
+      "price": 184734,
+      "description": "A legendary wedding creation in 22K gold. This grand bridal set includes a premium heritage choker, a long matching haar, and coordinating nakshi jhumkas.",
+      "images": [
+        "assets/new_image2/bridal/f9a8e946-2d93-4496-accd-3828562c2a09.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "22.50g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_bridal_13_1779446441999",
+      "name": "Imperial Heritage Mango Haar Wedding Choker Set",
+      "price": 211418,
+      "description": "Perfect for the elegant South-Indian bride, this grand temple-style kasumalai and mango-motif set radiates royal luxury and traditional blessings.",
+      "images": [
+        "assets/new_image2/bridal/f9deb6e3-d3fd-460e-ac72-2c36dac9ed2b.jpg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "25.75g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:41.999Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_0_1779446442000",
+      "name": "Celestial Split Shank Diamond Necklace",
+      "price": 55000,
+      "description": "Dazzling 18K white gold piece highlighting a brilliant-cut center diamond and a shimmering halo cluster of VVS-VS clarity diamonds, IGI certified.",
+      "images": [
+        "assets/new_image2/diamond/17c2792d-2fbc-44ad-a814-355a5e08117d.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "2.20g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_1_1779446442000",
+      "name": "Aura Double Halo Diamond Ring",
+      "price": 68500,
+      "description": "This luxurious diamond solitaire ring features a sleek split-shank design, perfectly capturing the light with exceptional fire and brilliance.",
+      "images": [
+        "assets/new_image2/diamond/3b7871f0-8b9f-4117-a00d-583f9822f94e.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "2.85g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_2_1779446442000",
+      "name": "Brilliant-Cut Princess Cut Diamond Pendant",
+      "price": 82000,
+      "description": "An incredibly romantic pave-set floral design, combining masterfully set natural diamonds with high-polish 18K gold for unmatched sparkle.",
+      "images": [
+        "assets/new_image2/diamond/6dc7c432-e1f6-42ff-aef0-33cd23e7bacd.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "3.50g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_3_1779446442000",
+      "name": "Solitaire Trilogy Diamond Earrings",
+      "price": 95500,
+      "description": "Exquisite cluster-design diamond piece from MGS Jewellerys, perfect for modern bridal sets or an elegant statement of luxury.",
+      "images": [
+        "assets/new_image2/diamond/8428c7e4-4b0c-46ab-8dbf-e7fa09a5ab5a.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "4.15g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_4_1779446442000",
+      "name": "Adrika Halo Cluster Diamond Studs",
+      "price": 109000,
+      "description": "Dazzling 18K white gold piece highlighting a brilliant-cut center diamond and a shimmering halo cluster of VVS-VS clarity diamonds, IGI certified.",
+      "images": [
+        "assets/new_image2/diamond/9cb9e4b4-d30f-4922-8210-d818f45c365b.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "4.80g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_5_1779446442000",
+      "name": "Flora Infinity Loop Diamond Necklace",
+      "price": 122500,
+      "description": "This luxurious diamond solitaire ring features a sleek split-shank design, perfectly capturing the light with exceptional fire and brilliance.",
+      "images": [
+        "assets/new_image2/diamond/ab99ff80-a303-43e3-9e3b-6add57558423.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "5.45g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_6_1779446442000",
+      "name": "Venezia Pave-set Floral Diamond Ring",
+      "price": 136000,
+      "description": "An incredibly romantic pave-set floral design, combining masterfully set natural diamonds with high-polish 18K gold for unmatched sparkle.",
+      "images": [
+        "assets/new_image2/diamond/d99b0369-c645-46e8-a4eb-4648a247e83a.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "6.10g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_7_1779446442000",
+      "name": "Royal Shining Solitaire Diamond Pendant",
+      "price": 149500,
+      "description": "Exquisite cluster-design diamond piece from MGS Jewellerys, perfect for modern bridal sets or an elegant statement of luxury.",
+      "images": [
+        "assets/new_image2/diamond/f5bc48d3-9e1c-4110-a05f-b62ea735a386.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "6.75g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_8_1779446442000",
+      "name": "Starlight Split Shank Diamond Earrings",
+      "price": 163000,
+      "description": "Dazzling 18K white gold piece highlighting a brilliant-cut center diamond and a shimmering halo cluster of VVS-VS clarity diamonds, IGI certified.",
+      "images": [
+        "assets/new_image2/diamond/fd7f7380-0c48-4f18-ae49-a05515537f07.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "7.40g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_diamond_9_1779446442000",
+      "name": "Imperial Double Halo Diamond Studs",
+      "price": 176500,
+      "description": "This luxurious diamond solitaire ring features a sleek split-shank design, perfectly capturing the light with exceptional fire and brilliance.",
+      "images": [
+        "assets/new_image2/diamond/Screenshot 2026-05-21 225838.png"
+      ],
+      "hallmark": "IGI / HUID Certified",
+      "purity": "18K Gold with VVS-VS Diamonds",
+      "weight": "8.05g",
+      "category": "diamond",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.000Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_0_1779446442001",
+      "name": "Floral Peacock Engraved Finger Ring",
+      "price": 18884,
+      "description": "A gorgeous cocktail ring detailing a tiered floral blossom motif in 22K gold, adding an unmistakable touch of luxury to your fingers.",
+      "images": [
+        "assets/new_image2/rings/0df2e863-e863-49d0-9947-dc68085a3c57.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "2.40g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_1_1779446442001",
+      "name": "Classic Twisted Rope Gold Ring",
+      "price": 23211,
+      "description": "Classic highly-polished gold band featuring subtle geometric details, perfect for comfortable daily wear and timeless class.",
+      "images": [
+        "assets/new_image2/rings/20e53d6f-30a0-4cf5-8e73-81363115a236.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "2.95g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_2_1779446442001",
+      "name": "Modernist Three-Stone Cocktail Ring",
+      "price": 27539,
+      "description": "An antique-finished signet ring highlighting detailed peacock engravings and a textured border, handcrafted at MGS Jewellerys Davanagere.",
+      "images": [
+        "assets/new_image2/rings/212e7c23-a148-488d-8016-dcc2d00abb2b.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "3.50g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_3_1779446442001",
+      "name": "Swarna Geometric Band Ring",
+      "price": 31867,
+      "description": "A delicate filigree-worked gold ring showcasing a central lotus blossom motif, certified HUID to assure pure gold quality.",
+      "images": [
+        "assets/new_image2/rings/542b9c67-2027-4339-9567-8444b35286a1.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "4.05g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_4_1779446442001",
+      "name": "Kanak Cocktail Cluster Statement Ring",
+      "price": 36194,
+      "description": "A gorgeous cocktail ring detailing a tiered floral blossom motif in 22K gold, adding an unmistakable touch of luxury to your fingers.",
+      "images": [
+        "assets/new_image2/rings/6386daac-fe54-4ee6-acfa-654ad83f0202.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "4.60g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_5_1779446442001",
+      "name": "Antique Sleek Band Finger Ring",
+      "price": 40522,
+      "description": "Classic highly-polished gold band featuring subtle geometric details, perfect for comfortable daily wear and timeless class.",
+      "images": [
+        "assets/new_image2/rings/71d937c7-e98c-4c1a-9821-094ad778321d.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "5.15g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_6_1779446442001",
+      "name": "Filigree Signet Crest Gold Ring",
+      "price": 44849,
+      "description": "An antique-finished signet ring highlighting detailed peacock engravings and a textured border, handcrafted at MGS Jewellerys Davanagere.",
+      "images": [
+        "assets/new_image2/rings/81afbaf8-92ae-4d4c-b78f-f825f69bd7ce.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "5.70g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_7_1779446442001",
+      "name": "Vedic Lotus Blossom Cocktail Ring",
+      "price": 49177,
+      "description": "A delicate filigree-worked gold ring showcasing a central lotus blossom motif, certified HUID to assure pure gold quality.",
+      "images": [
+        "assets/new_image2/rings/9632f3cf-4078-4e0c-b759-38551f821907.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "6.25g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_8_1779446442001",
+      "name": "Aura Peacock Engraved Band Ring",
+      "price": 53504,
+      "description": "A gorgeous cocktail ring detailing a tiered floral blossom motif in 22K gold, adding an unmistakable touch of luxury to your fingers.",
+      "images": [
+        "assets/new_image2/rings/9cc2aac6-63f7-4dc5-b9ff-4a4fcccda270.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "6.80g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_9_1779446442001",
+      "name": "Royal Twisted Rope Statement Ring",
+      "price": 57832,
+      "description": "Classic highly-polished gold band featuring subtle geometric details, perfect for comfortable daily wear and timeless class.",
+      "images": [
+        "assets/new_image2/rings/a290bdaa-535d-4a44-818e-1f7dc42549ba.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "7.35g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_10_1779446442001",
+      "name": "Nitya Three-Stone Finger Ring",
+      "price": 62160,
+      "description": "An antique-finished signet ring highlighting detailed peacock engravings and a textured border, handcrafted at MGS Jewellerys Davanagere.",
+      "images": [
+        "assets/new_image2/rings/a69ed8b4-740c-4e0d-955e-103d241b1037.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "7.90g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_11_1779446442001",
+      "name": "Sleek Geometric Gold Ring",
+      "price": 66487,
+      "description": "A delicate filigree-worked gold ring showcasing a central lotus blossom motif, certified HUID to assure pure gold quality.",
+      "images": [
+        "assets/new_image2/rings/bfd8573e-8dd8-4ff5-ba13-2c760f90be6e.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "8.45g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_12_1779446442001",
+      "name": "Floral Cocktail Cluster Cocktail Ring",
+      "price": 70815,
+      "description": "A gorgeous cocktail ring detailing a tiered floral blossom motif in 22K gold, adding an unmistakable touch of luxury to your fingers.",
+      "images": [
+        "assets/new_image2/rings/c100887f-953d-4590-ba5e-31cd1bec5de3.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "9.00g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_13_1779446442001",
+      "name": "Classic Sleek Band Band Ring",
+      "price": 75142,
+      "description": "Classic highly-polished gold band featuring subtle geometric details, perfect for comfortable daily wear and timeless class.",
+      "images": [
+        "assets/new_image2/rings/c4077e69-031c-4c36-b6fa-1997e52d542c.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "9.55g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_14_1779446442001",
+      "name": "Modernist Signet Crest Statement Ring",
+      "price": 79470,
+      "description": "An antique-finished signet ring highlighting detailed peacock engravings and a textured border, handcrafted at MGS Jewellerys Davanagere.",
+      "images": [
+        "assets/new_image2/rings/f9e3a0f3-a4cb-40e6-ae95-a7444438421b.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "10.10g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_new_image2_rings_15_1779446442001",
+      "name": "Swarna Lotus Blossom Finger Ring",
+      "price": 20851,
+      "description": "A delicate filigree-worked gold ring showcasing a central lotus blossom motif, certified HUID to assure pure gold quality.",
+      "images": [
+        "assets/new_image2/rings/fd81fc6e-e6c5-48d8-bdca-f9da9662236a.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "2.65g",
+      "category": "rings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:40:42.001Z"
+    },
+    {
+      "_id": "prod_root_asset_antique_bangles",
+      "name": "Aditya Antique Gold Bangles Set",
+      "price": 203027,
+      "description": "Intricately designed antique gold bangles detailed with classic pattern bands, showcasing traditional craftsmanship from MGS Jewellerys Davanagere.",
+      "images": [
+        "assets/antique_bangles.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "26.50g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:34:27.273Z"
+    },
+    {
+      "_id": "prod_root_asset_heritage_bangles",
+      "name": "Kanak Heritage Gold Kada Pair",
+      "price": 245973,
+      "description": "Bold and beautiful gold kadas featuring floral screw-clasp designs and detailed nakshi work, perfect for heritage family bridal sets.",
+      "images": [
+        "assets/heritage_bangles.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "32.10g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:34:27.288Z"
+    },
+    {
+      "_id": "prod_root_asset_temple_bangles",
+      "name": "Devi Temple Carved Gold Bangles",
+      "price": 220703,
+      "description": "Divine temple style gold bangles featuring detailed carvings of celestial motifs, crafted in pure 22K gold with high-polish borders.",
+      "images": [
+        "assets/temple_bangles.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "28.80g",
+      "category": "bangles",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:34:27.288Z"
+    },
+    {
+      "_id": "prod_root_asset_heritage_jewelry",
+      "name": "Vedic Heritage Royal Bridal Set",
+      "price": 601512,
+      "description": "A majestic bridal set containing a layered grand necklace, heavy statement chokers, and matching premium drop earrings decorated with ruby cabochons.",
+      "images": [
+        "assets/heritage_jewelry_new.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "74.50g",
+      "category": "bridal",
+      "tag": "bridal",
+      "createdAt": "2026-05-22T10:34:27.288Z"
+    },
+    {
+      "_id": "prod_root_asset_maang_tikka",
+      "name": "Shringar Heritage Gold Maang Tikka",
+      "price": 103341,
+      "description": "A magnificent heritage head ornament featuring intricate nakshi carvings of the deity, dangling gold bead drops, and beautiful ruby stones.",
+      "images": [
+        "assets/heritage_maang_tikka.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "12.80g",
+      "category": "bridal",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:34:27.288Z"
+    },
+    {
+      "_id": "prod_root_asset_heritage_necklace",
+      "name": "Aishwarya Royal Heritage Gold Collar",
+      "price": 286396,
+      "description": "A classic collar necklace detailing gorgeous overlapping leaf shapes, floral drop accents, and a pristine semi-antique yellow gold finish.",
+      "images": [
+        "assets/heritage_necklace.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "36.40g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:34:27.288Z"
+    },
+    {
+      "_id": "prod_root_asset_mangalsutra",
+      "name": "Shubh Mangala Traditional Mangalsutra",
+      "price": 139466,
+      "description": "A sacred mangalsutra designed with dual black bead chains, exquisite gold cup connectors, and an ornate traditional gold pendant center.",
+      "images": [
+        "assets/mangalsutra.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "18.20g",
+      "category": "mangalsutra",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:34:27.288Z"
+    },
+    {
+      "_id": "prod_root_asset_studs",
+      "name": "Kanaka Lotus Blossom Gold Studs",
+      "price": 41380,
+      "description": "Charming lotus-inspired gold stud earrings detailing tiered petals and delicate textured beads in premium HUID hallmarked 22K gold.",
+      "images": [
+        "assets/studs.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "5.40g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:34:27.288Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_0_1779445820377",
+      "name": "Swarna Franco Chain",
+      "price": 62837,
+      "description": "A masterclass in gold crafting, this premium chain showcases expert weaving techniques to offer superior strength and brilliant luster for everyday elegance.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/1.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "8.20g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.377Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_1_1779445820378",
+      "name": "Kanak Singapore Twist Gold Chain",
+      "price": 73105,
+      "description": "Exquisite dailywear gold chain handcrafted at MGS Jewellerys Davanagere. Features pristine polish, HUID hallmarking, and classic styling.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/2.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "9.54g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_2_1779445820378",
+      "name": "Classic Box Link Kada Chain",
+      "price": 83374,
+      "description": "Designed for versatility and endurance, this 22K gold chain radiates luxury with sleek textured links and a secure premium clasp.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/22.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "10.88g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_3_1779445820378",
+      "name": "Royal Spiga Neck Chain",
+      "price": 93642,
+      "description": "Featuring traditional Davanagere jewelry artistry, this gorgeous neck chain adds a timeless charm to both formal and ethnic attire.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/4.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "12.22g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_4_1779445820378",
+      "name": "Premium Curb Dailywear Chain",
+      "price": 103911,
+      "description": "A masterclass in gold crafting, this premium chain showcases expert weaving techniques to offer superior strength and brilliant luster for everyday elegance.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/5.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "13.56g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_5_1779445820378",
+      "name": "Davanagere Serpentine Sleek Chain",
+      "price": 114179,
+      "description": "Exquisite dailywear gold chain handcrafted at MGS Jewellerys Davanagere. Features pristine polish, HUID hallmarking, and classic styling.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/6.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "14.90g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_6_1779445820378",
+      "name": "Heritage Hand-woven Heavy Chain",
+      "price": 124448,
+      "description": "Designed for versatility and endurance, this 22K gold chain radiates luxury with sleek textured links and a secure premium clasp.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/ee.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "16.24g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_7_1779445820378",
+      "name": "Imperial Filigree Chain",
+      "price": 134716,
+      "description": "Featuring traditional Davanagere jewelry artistry, this gorgeous neck chain adds a timeless charm to both formal and ethnic attire.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/ll.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "17.58g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_8_1779445820378",
+      "name": "Vedic Textured Gold Chain",
+      "price": 144985,
+      "description": "A masterclass in gold crafting, this premium chain showcases expert weaving techniques to offer superior strength and brilliant luster for everyday elegance.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/qq.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "18.92g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_9_1779445820378",
+      "name": "Aura Classic Loop Kada Chain",
+      "price": 155253,
+      "description": "Exquisite dailywear gold chain handcrafted at MGS Jewellerys Davanagere. Features pristine polish, HUID hallmarking, and classic styling.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/tt.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "20.26g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_10_1779445820378",
+      "name": "Luxury Venezia Neck Chain",
+      "price": 165522,
+      "description": "Designed for versatility and endurance, this 22K gold chain radiates luxury with sleek textured links and a secure premium clasp.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/WhatsApp Image 2026-05-22 at 12.58.17 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "21.60g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_11_1779445820378",
+      "name": "Nitya Rope Dailywear Chain",
+      "price": 175790,
+      "description": "Featuring traditional Davanagere jewelry artistry, this gorgeous neck chain adds a timeless charm to both formal and ethnic attire.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/WhatsApp Image 2026-05-22 at 12.58.20 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "22.94g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_12_1779445820378",
+      "name": "Sleek Cuban Link Sleek Chain",
+      "price": 186059,
+      "description": "A masterclass in gold crafting, this premium chain showcases expert weaving techniques to offer superior strength and brilliant luster for everyday elegance.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/ww.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "24.28g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_chains_13_1779445820378",
+      "name": "Maharaja Figaro Heavy Chain",
+      "price": 196327,
+      "description": "Exquisite dailywear gold chain handcrafted at MGS Jewellerys Davanagere. Features pristine polish, HUID hallmarking, and classic styling.",
+      "images": [
+        "assets/NEW_PHOTOS/Chains/yy.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "25.62g",
+      "category": "chains",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.378Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_0_1779445820380",
+      "name": "Mayura Crescent Jhumkas",
+      "price": 27539,
+      "description": "Handcrafted to perfection, these premium 22K gold earrings blend heritage nakshi work with modern comfort, creating a gorgeous accessory for any special occasion.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/1.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "3.50g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_1_1779445820380",
+      "name": "Swarna Jhumka Chandbalis",
+      "price": 34227,
+      "description": "Stunning gold jhumkas detailing intricate floral engravings, classic dangling beads, and a high-polish finish from MGS Jewellerys.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/2.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "4.35g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_2_1779445820380",
+      "name": "Anaya Stud Studs",
+      "price": 40915,
+      "description": "Royal chandbalis designed to catch the light beautifully, hallmarked with HUID and featuring exquisite traditional motifs.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/3.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "5.20g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_3_1779445820380",
+      "name": "Traditional Drop Drops",
+      "price": 47603,
+      "description": "Elegant and lightweight studs featuring a modern blossom motif in pure 22K gold, perfect for adding subtle sophistication.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/4.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "6.05g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_4_1779445820380",
+      "name": "Modernist Dangle Dangles",
+      "price": 54291,
+      "description": "Handcrafted to perfection, these premium 22K gold earrings blend heritage nakshi work with modern comfort, creating a gorgeous accessory for any special occasion.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/5.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "6.90g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_5_1779445820380",
+      "name": "Filigree Chandbali Earrings",
+      "price": 60979,
+      "description": "Stunning gold jhumkas detailing intricate floral engravings, classic dangling beads, and a high-polish finish from MGS Jewellerys.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/6.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "7.75g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_6_1779445820380",
+      "name": "Kasula Dewdrop Jhumkas",
+      "price": 67667,
+      "description": "Royal chandbalis designed to catch the light beautifully, hallmarked with HUID and featuring exquisite traditional motifs.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/7.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "8.60g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_7_1779445820380",
+      "name": "Royal Lotus Chandbalis",
+      "price": 74355,
+      "description": "Elegant and lightweight studs featuring a modern blossom motif in pure 22K gold, perfect for adding subtle sophistication.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/8.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "9.45g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_8_1779445820380",
+      "name": "Festive Nakshi Studs",
+      "price": 81043,
+      "description": "Handcrafted to perfection, these premium 22K gold earrings blend heritage nakshi work with modern comfort, creating a gorgeous accessory for any special occasion.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/9.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "10.30g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_9_1779445820380",
+      "name": "Nupur Beaded Drops",
+      "price": 87732,
+      "description": "Stunning gold jhumkas detailing intricate floral engravings, classic dangling beads, and a high-polish finish from MGS Jewellerys.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/WhatsApp Image 2026-05-22 at 12.58.14 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "11.15g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_earrings_10_1779445820380",
+      "name": "Adrika Floral Dangles",
+      "price": 94420,
+      "description": "Royal chandbalis designed to catch the light beautifully, hallmarked with HUID and featuring exquisite traditional motifs.",
+      "images": [
+        "assets/NEW_PHOTOS/Earrings/WhatsApp Image 2026-05-22 at 12.58.16 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "12.00g",
+      "category": "earrings",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.380Z"
+    },
+    {
+      "_id": "prod_new_photo_necklaces_0_1779445820382",
+      "name": "Rajkumari Nakshi Carved Collar Necklace",
+      "price": 117067,
+      "description": "A breathtaking masterwork of 22K gold, this magnificent necklace is hand-carved by heritage craftsmen, featuring intricate mesh details and certified purity.",
+      "images": [
+        "assets/NEW_PHOTOS/Necklaces/33.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "14.50g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.382Z"
+    },
+    {
+      "_id": "prod_new_photo_necklaces_1_1779445820382",
+      "name": "Aura Pearl Cascading Rani Haar",
+      "price": 139269,
+      "description": "Embodying the grandeur of temple craftsmanship, this classic necklace showcases detailed gold beadwork and a premium royal finish.",
+      "images": [
+        "assets/NEW_PHOTOS/Necklaces/e.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "17.25g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.382Z"
+    },
+    {
+      "_id": "prod_new_photo_necklaces_2_1779445820382",
+      "name": "Lakshmi Choker Statement Piece",
+      "price": 161471,
+      "description": "An exquisite addition to your bridal or festive trousseau, designed to radiate pristine luxury and unmatched South-Indian heritage styling.",
+      "images": [
+        "assets/NEW_PHOTOS/Necklaces/p.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "20.00g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.382Z"
+    },
+    {
+      "_id": "prod_new_photo_necklaces_3_1779445820382",
+      "name": "Swarna Collar Necklace",
+      "price": 183673,
+      "description": "A stunning filigree necklace highlighting delicate floral vines, cascading gold drop hangings, and custom-finished gold elements.",
+      "images": [
+        "assets/NEW_PHOTOS/Necklaces/tt.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "22.75g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.382Z"
+    },
+    {
+      "_id": "prod_new_photo_necklaces_4_1779445820382",
+      "name": "Gilded Mango Motif Choker",
+      "price": 205876,
+      "description": "A breathtaking masterwork of 22K gold, this magnificent necklace is hand-carved by heritage craftsmen, featuring intricate mesh details and certified purity.",
+      "images": [
+        "assets/NEW_PHOTOS/Necklaces/WhatsApp Image 2026-05-2 at 12.40.08 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "25.50g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.382Z"
+    },
+    {
+      "_id": "prod_new_photo_necklaces_5_1779445820382",
+      "name": "Vaikuntha Kasula Collar Necklace",
+      "price": 228078,
+      "description": "Embodying the grandeur of temple craftsmanship, this classic necklace showcases detailed gold beadwork and a premium royal finish.",
+      "images": [
+        "assets/NEW_PHOTOS/Necklaces/WhatsApp Image 2026-05-22 at 12.40.07 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "28.25g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.382Z"
+    },
+    {
+      "_id": "prod_new_photo_necklaces_6_1779445820382",
+      "name": "Mayura Leafy Vine Rani Haar",
+      "price": 250280,
+      "description": "An exquisite addition to your bridal or festive trousseau, designed to radiate pristine luxury and unmatched South-Indian heritage styling.",
+      "images": [
+        "assets/NEW_PHOTOS/Necklaces/WhatsApp Image 2026-05-22 at 12.40.08 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "31.00g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.382Z"
+    },
+    {
+      "_id": "prod_new_photo_necklaces_7_1779445820382",
+      "name": "Heritage Aishwarya Statement Piece",
+      "price": 272483,
+      "description": "A stunning filigree necklace highlighting delicate floral vines, cascading gold drop hangings, and custom-finished gold elements.",
+      "images": [
+        "assets/NEW_PHOTOS/Necklaces/WhatsApp Image 2026-05-22 at 12.58.19 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "33.75g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.382Z"
+    },
+    {
+      "_id": "prod_new_photo_necklaces_8_1779445820382",
+      "name": "Maharani Floral Blossom Necklace",
+      "price": 294685,
+      "description": "A breathtaking masterwork of 22K gold, this magnificent necklace is hand-carved by heritage craftsmen, featuring intricate mesh details and certified purity.",
+      "images": [
+        "assets/NEW_PHOTOS/Necklaces/WhatsApp Image 2026-05-22 at 12.58.24 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "36.50g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.382Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_0_1779445820383",
+      "name": "Ganesha Teardrop Filigree Divine Shield",
+      "price": 13547,
+      "description": "A highly detailed sacred gold pendant portraying exquisite nakshi carvings of the deity, perfect for carrying a divine blessing of prosperity.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/0.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "1.80g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_1_1779445820383",
+      "name": "Lakshmi Temple Emblem Pendant",
+      "price": 16934,
+      "description": "Exquisitely crafted 22K gold pendant featuring beautiful filigree borders and a textured center motif, certified with BIS and HUID.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/222.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "2.25g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_2_1779445820383",
+      "name": "Omkara Deity Shield Locket",
+      "price": 20321,
+      "description": "Sleek and highly polished modern gold pendant designed for daily wear or elegant layering, crafted at MGS Jewellerys Davanagere.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/3.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "2.70g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_3_1779445820383",
+      "name": "Divine Sleek Heart Gold Pendant",
+      "price": 23708,
+      "description": "A gorgeous traditional temple pendant showcasing fine micro-engraving, perfect to pair with a classic gold chain.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/44.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "3.15g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_4_1779445820383",
+      "name": "Sacred Trishul Motif Divine Shield",
+      "price": 27094,
+      "description": "A highly detailed sacred gold pendant portraying exquisite nakshi carvings of the deity, perfect for carrying a divine blessing of prosperity.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/444.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "3.60g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_5_1779445820383",
+      "name": "Trimurti Auspicious Coin Pendant",
+      "price": 30481,
+      "description": "Exquisitely crafted 22K gold pendant featuring beautiful filigree borders and a textured center motif, certified with BIS and HUID.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/6.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "4.05g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_6_1779445820383",
+      "name": "Mayura Nakshi Carved Locket",
+      "price": 33868,
+      "description": "Sleek and highly polished modern gold pendant designed for daily wear or elegant layering, crafted at MGS Jewellerys Davanagere.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/65.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "4.50g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_7_1779445820383",
+      "name": "Chandra Floral Bloom Gold Pendant",
+      "price": 37255,
+      "description": "A gorgeous traditional temple pendant showcasing fine micro-engraving, perfect to pair with a classic gold chain.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/77.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "4.95g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_8_1779445820383",
+      "name": "Surya Teardrop Filigree Divine Shield",
+      "price": 40641,
+      "description": "A highly detailed sacred gold pendant portraying exquisite nakshi carvings of the deity, perfect for carrying a divine blessing of prosperity.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/fff.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "5.40g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_9_1779445820383",
+      "name": "Lotus Temple Emblem Pendant",
+      "price": 44028,
+      "description": "Exquisitely crafted 22K gold pendant featuring beautiful filigree borders and a textured center motif, certified with BIS and HUID.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/ii.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "5.85g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_10_1779445820383",
+      "name": "Mangal Deity Shield Locket",
+      "price": 47415,
+      "description": "Sleek and highly polished modern gold pendant designed for daily wear or elegant layering, crafted at MGS Jewellerys Davanagere.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/iiii.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "6.30g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_11_1779445820383",
+      "name": "Auspicious Sleek Heart Gold Pendant",
+      "price": 50802,
+      "description": "A gorgeous traditional temple pendant showcasing fine micro-engraving, perfect to pair with a classic gold chain.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/kk.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "6.75g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_12_1779445820383",
+      "name": "Shiva Trishul Motif Divine Shield",
+      "price": 54189,
+      "description": "A highly detailed sacred gold pendant portraying exquisite nakshi carvings of the deity, perfect for carrying a divine blessing of prosperity.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/uu.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "7.20g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_photo_pendants_13_1779445820383",
+      "name": "Ganesha Auspicious Coin Pendant",
+      "price": 57575,
+      "description": "Exquisitely crafted 22K gold pendant featuring beautiful filigree borders and a textured center motif, certified with BIS and HUID.",
+      "images": [
+        "assets/NEW_PHOTOS/Pendants/WhatsApp Image 2026-05-22 at 12.58.18 PM.jpeg"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "7.65g",
+      "category": "pendants",
+      "tag": "new",
+      "createdAt": "2026-05-22T10:30:20.383Z"
+    },
+    {
+      "_id": "prod_new_necklace_1",
+      "name": "Aura Traditional Temple Choker with Pearls",
+      "price": 222023,
+      "description": "Ornate traditional gold choker with delicate filigree mesh work, dangling ivory pearls, and a masterfully crafted circular floral centerpiece.",
+      "images": [
+        "assets/images/necklace_new_1.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "32.45g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T09:40:47.632Z"
+    },
+    {
+      "_id": "prod_new_necklace_2",
+      "name": "Vaikuntha Emerald & Ruby Gold Necklace",
+      "price": 165029,
+      "description": "A majestic gold collar featuring intricate nakshi hand-carvings, studded with premium emeralds, rubies, and tiered dangling freshwater pearls.",
+      "images": [
+        "assets/images/necklace_new_2.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "24.12g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T09:40:47.698Z"
+    },
+    {
+      "_id": "prod_new_necklace_3",
+      "name": "Mayura Leafy Filigree Mesh Gold Collar",
+      "price": 293180,
+      "description": "Exquisite mesh-patterned gold choker detailed with blooming floral leaf motifs, cascading asymmetrical golden hangings, and a textured finish.",
+      "images": [
+        "assets/images/necklace_new_3.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "42.85g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T09:40:47.698Z"
+    },
+    {
+      "_id": "prod_new_necklace_4",
+      "name": "Rajkumari Floral Blossom Gold Necklace",
+      "price": 264098,
+      "description": "Symmetrical masterpiece displaying layered floral vines, beautifully finished gold flower buds, and elegant dangling chain drops.",
+      "images": [
+        "assets/images/necklace_new_4.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "38.60g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T09:40:47.698Z"
+    },
+    {
+      "_id": "prod_new_necklace_5",
+      "name": "Swarna Patra Leafy Collar Gold Necklace",
+      "price": 133419,
+      "description": "Delicate and sleek gold chain adorned with cascading stylized leaves, radiating a classic high-polish shine for modern premium look.",
+      "images": [
+        "assets/images/necklace_new_5.png"
+      ],
+      "hallmark": "HUID",
+      "purity": "22K Gold (91.6%)",
+      "weight": "19.50g",
+      "category": "necklaces",
+      "tag": "new",
+      "createdAt": "2026-05-22T09:40:47.698Z"
+    },
+    {
       "name": "Royal Heritage Nakshi Bridal Choker Set [Gilded Edition]",
       "price": 146929,
       "description": "Bespoke handcrafted gold piece from MGS Jewellerys Davanagere. Inspiring premium gold background aesthetics, BIS and HUID hallmarked for pristine quality.",
