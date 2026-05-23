@@ -75,7 +75,7 @@ window.getApiBase = () => {
   
   // If hosted on Vercel or any other static platform, point to the live Render backend
   if (hostname.includes('vercel.app') || (!hostname.includes('onrender.com') && hostname !== 'localhost')) {
-    return 'https://finalmgswebpage.onrender.com';
+    return 'https://mgsjewellerys.bond';
   }
   
   // Default same-origin (when running directly on the Render server)
