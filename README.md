@@ -1,147 +1,130 @@
-# MGS Jewellerys Admin (scaffold)
-
-This workspace contains a scaffolded Admin Dashboard for MGS Jewellerys.
-
-Frontend (client): React + Vite + Tailwind
-Backend (server): Node.js + Express + MongoDB + Cloudinary
-
-Quick start
-
-1. Install dependencies for client and server:
-
-```
-cd client
-npm install
-cd ../server
-npm install
-```
-
-2. Create `.env` in the project root or `server` with credentials (see `.env.example`).
-
-3. Start server:
-
-```
-cd server
-npm run dev
-```
-
-4. Start client:
-
-```
-cd client
-npm run dev
-```
-
-Notes:
-- The backend provides protected routes under `/api/*` and an upload endpoint using Cloudinary. Replace Cloudinary env vars to enable uploads.
-- This scaffold focuses on a luxury visual style (ivory background, gold accents, serif headings). Expand components and API integration as needed.
-# MGS JEWELLERYS — Official Website
+# MGS Jewellerys — Official Digital Commerce & Management Platform
 
 > **Davanagere's Legacy of Pure Gold · Est. 1999**
 
-A full-stack, client-facing luxury jewelry website for **MGS Jewellerys**, Davanagere, Karnataka. Built as a complete digital transformation platform — transitioning a 24-year goldsmith heritage into a modern, sales-accelerating digital presence.
+A full-stack, enterprise-grade luxury jewelry platform for **MGS Jewellerys**, Davanagere, Karnataka. Built as a comprehensive digital transformation system — transitioning a 24-year goldsmith heritage into a high-performance web experience with an integrated React Admin CMS.
 
 ---
 
-## 🌐 Pages
+## 🏛️ System Architecture
+
+```mermaid
+graph TD
+    Client[Web Browsers / Mobile Devices]
+    NodeServer[Unified Express Server - Port 5000]
+    PublicPages[Public Luxury Storefront - Static HTML/JS]
+    AdminSPA[Admin Dashboard - React 18 + Vite SPA]
+    APIRoutes[RESTful API Engine /api/*]
+    Storage[(MongoDB Atlas / Local JSON Backup Store)]
+    Cloudinary[(Cloudinary Media Assets)]
+
+    Client -->|Public Storefront| PublicPages
+    Client -->|Admin Management /admin| AdminSPA
+    PublicPages -->|Fetch Products, Rates, Offers| APIRoutes
+    AdminSPA -->|CRUD Catalog, Rates, Settings| APIRoutes
+    NodeServer --> PublicPages
+    NodeServer --> AdminSPA
+    NodeServer --> APIRoutes
+    APIRoutes --> Storage
+    APIRoutes --> Cloudinary
+```
+
+---
+
+## 🌐 Public Storefront Pages
 
 | Page | File | Description |
 |---|---|---|
-| **Homepage** | `index.html` | Hero, Collections, Festive Offers, Heritage, WhatsApp List Builder, Bespoke Form, Stores |
-| **Collections** | *(via index filter)* | Dynamic product grid with category filters |
-| **Festival Offers** | `offers.html` | Active offer hero, countdown timer, Old Gold Exchange Calculator |
-| **Gold Calculator** | `calculator.html` | Live gold value + EMI calculator with amortization table |
-
-
----
-
-## ✨ Features
-
-### Customer-Facing
-- **Live Gold Rate Ticker** — 22K, 24K, Silver rates updated every 5 seconds
-- **Interactive Product Gallery** — Filterable by category, every card has HUID/BIS hallmark badges
-- **WhatsApp CTAs** — Every product links directly to WhatsApp inquiry with pre-filled message
-- **VIP Offers List Builder** — Collect customer WhatsApp numbers for offer campaigns
-- **Festival Offer System** — Countdown timers, specific offer details (wastage %, making charge discount)
-- **Old Gold Exchange Calculator** — Estimate value including festival bonus
-- **Gold Value Calculator** — Weight × purity × wastage × making charges + GST
-- **EMI Calculator** — With full amortization schedule
-- **Bespoke Custom Design Form** — Submits to WhatsApp
-
-### Business Competitive Edge Highlighted
-- **7.99% Wastage** — Prominently advertised as "Lowest in Davanagere"
-- **100% Making Charge OFF** — On festival offers
-- **Extra ₹200/g** — On Old Gold Exchange (festive periods)
-- **Maker-Direct Pricing** — Messaging that eliminates big-brand markup narrative
-
-### Admin CMS Dashboard
-- KPI Dashboard (Inquiries, Products, Offers, Live Gold Rate)
-- Conversion Funnel visualization
-- Product Catalog — Add, Edit, Delete with hallmark & weight fields
-- Festival Offer Scheduler — Full control over wastage %, making charge discount, diamond %, dates
-- Festive Poster Gallery — Upload and manage promotional posters
-- WhatsApp Leads Table — Source tracking + one-click WhatsApp reply
-- Leads CSV Export
-- Gold Rate Management — Update live rates displayed site-wide
+| **Homepage** | `index.html` | Hero showcase, interactive collection highlights, festive offers, heritage story, and store locator |
+| **Collections** | `collections.html` | Filterable catalog with search, category facets, HUID/BIS purity badges, and inquiry modals |
+| **Festival Offers** | `offers.html` | Active promotional campaigns, countdown timers, and Old Gold Exchange valuation |
+| **Heritage & Craft** | `heritage.html` | Brand narrative, master artisan craftsmanship, and 24-year legacy |
+| **Gold Calculator** | `calculator.html` | Live gold purity valuation, wastage, making charges, and EMI amortization schedule |
+| **Admin Portal** | `/admin/` | Integrated React Admin CMS for real-time inventory and pricing management |
 
 ---
 
-## 🎨 Design System
+## 🚀 Quick Start & Development
 
-- **Aesthetic:** Black/Gold luxury blueprint (`#050505` + `#D4AF37`)
-- **Fonts:** Cormorant Garamond (serif headings) + Inter (body) + Rajdhani (monospace labels)
-- **Animations:** Scroll-triggered fadeInUp, gold shimmer, pulse indicators
-- **Responsive:** Mobile-first, hamburger nav, stacked layouts below 768px
+### 1. Prerequisites
+- **Node.js** v18+ and **npm** v9+
+- Optional: MongoDB Atlas connection string (or use automated local JSON storage mode)
 
----
-
-## 📁 Project Structure
-
-```
-mgs jewelalry/
-├── index.html          # Homepage
-├── calculator.html     # Gold & EMI Calculator
-├── offers.html         # Festival Offers
-├── global.css          # Shared design system
-├── global.js           # Shared JS (navbar, ticker, animations)
-├── index.css           # Homepage-specific styles
-├── index.js            # Homepage-specific logic + product DB
-├── assets/             # All product & poster images
-│   ├── kasumalai.png
-│   ├── mangalsutra.png
-│   ├── antique_bangles.png
-│   ├── diamond_earrings.png
-│   ├── temple_bangles.png
-│   ├── gold_chain.png
-│   ├── ring.png
-│   ├── studs.png
-│   ├── bangle.png
-│   ├── chain.png
-│   ├── hero_necklace.png
-│   └── diwali_poster.png
-└── .gitignore
-```
-
----
-
-## 🚀 Running Locally
-
+### 2. Dependency Installation
 ```bash
-# Using npx serve (no install needed)
-npx serve .
+# Install root, client, and server dependencies
+npm run build
+```
 
-# Or open index.html directly in your browser
+### 3. Running the Unified Server
+```bash
+cd server
+node index.js
+```
+The server will boot on `http://localhost:5000/`, simultaneously serving:
+- **Public Luxury Website:** `http://localhost:5000/`
+- **Admin Dashboard:** `http://localhost:5000/admin/`
+- **REST APIs:** `http://localhost:5000/api/`
+
+### 4. Running Client in Hot-Reload Dev Mode (Optional)
+```bash
+cd client
+npm run dev
+```
+Accessible at `http://localhost:5173/admin/` with instant Vite HMR.
+
+---
+
+## 🔑 Admin Credentials (Default)
+- **Portal URL:** `http://localhost:5000/admin/`
+- **Email:** `admin@aurajewellers.com` (or `admin@mgs.com`)
+- **Password:** `Password123`
+
+---
+
+## 📡 REST API Reference
+
+| Method | Endpoint | Access | Description |
+|---|---|---|---|
+| `GET` | `/api/products` | Public | Retrieve active jewelry product catalog |
+| `POST` | `/api/products` | Protected | Create new product with images, hallmark, and pricing |
+| `PUT` | `/api/products/:id` | Protected | Update existing product details |
+| `DELETE` | `/api/products/:id` | Protected | Delete product from catalog |
+| `GET` | `/api/rates` | Public | Retrieve current gold (22K, 24K) and silver live market rates |
+| `PUT` | `/api/rates` | Protected | Update live market rates across storefront |
+| `GET` | `/api/offers` | Public | Retrieve active festival and seasonal promotional campaigns |
+| `POST` | `/api/offers` | Protected | Publish new offer with banners and countdown dates |
+| `GET` | `/api/settings` | Public | Retrieve site-wide global configurations (hero, contacts) |
+| `PUT` | `/api/settings` | Protected | Update branding and contact settings |
+| `POST` | `/api/upload` | Protected | Upload media files via Multer / Cloudinary |
+| `POST` | `/api/auth/login` | Public | Authenticate administrator and receive JWT token |
+
+---
+
+## ⚙️ Environment Configuration
+
+Create a `.env` file in the root directory:
+
+```env
+PORT=5000
+JWT_SECRET=your_secure_jwt_secret_token
+MONGO_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/mgs_db
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+GOLD_API_KEY=your_live_rates_provider_key
 ```
 
 ---
 
-## 📞 Business Info
+## 📞 Store & Business Information
 
 - **Store:** MGS Jewellerys, Vijayalakshmi Road, Near Clock Tower, Davanagere — 577 001
 - **Established:** 1999
-- **Speciality:** Senior Goldsmith & Maker — 22K BIS/HUID Hallmark Certified
-- **WhatsApp:** +91 80 2500 0000
+- **Certifications:** 100% BIS Hallmarked & HUID Certified 22K Gold
+- **WhatsApp Direct:** +91 80 2500 0000
 
 ---
 
-*© 2024 MGS Jewellerys · Davanagere, Karnataka · All Rights Reserved*
+*© 2026 MGS Jewellerys · Davanagere, Karnataka · All Rights Reserved*
+
