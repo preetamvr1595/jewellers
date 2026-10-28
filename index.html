@@ -100,24 +100,24 @@
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <nav id="site-navbar">
-    <a href="index.html" class="nav-logo">AURA JEWELLERS</a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="collections.html">Collections</a></li>
-      <li><a href="offers.html">Offers</a></li>
-      <li><a href="calculator.html">Gold Rate</a></li>
-      <li><a href="heritage.html">Our Legacy</a></li>
-      <li><a href="#" onclick="window.location.href=window.getApiBase()+'/admin/login';return false;">Admin Login</a>
+  <nav id="site-navbar" role="navigation" aria-label="Main Navigation">
+    <a href="index.html" class="nav-logo" aria-label="Aura Jewellers Homepage">AURA JEWELLERS</a>
+    <ul class="nav-links" role="menubar">
+      <li role="none"><a href="index.html" class="active" role="menuitem">Home</a></li>
+      <li role="none"><a href="collections.html" role="menuitem">Collections</a></li>
+      <li role="none"><a href="offers.html" role="menuitem">Offers</a></li>
+      <li role="none"><a href="calculator.html" role="menuitem">Gold Rate</a></li>
+      <li role="none"><a href="heritage.html" role="menuitem">Our Legacy</a></li>
+      <li role="none"><a href="#" onclick="window.location.href=window.getApiBase()+'/admin/login';return false;" role="menuitem">Admin Login</a>
       </li>
     </ul>
     <div class="nav-actions">
       <a href="https://wa.me/919876543210?text=Hello%20Aura%20Jewellers!%20I%27d%20like%20to%20inquire%20about%20your%20collection."
-        target="_blank" class="btn btn-whatsapp" style="padding:0.5rem 1.2rem;font-size:0.7rem">
+        target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding:0.5rem 1.2rem;font-size:0.7rem" aria-label="Contact us on WhatsApp">
         ✦ WhatsApp
       </a>
     </div>
-    <div class="nav-hamburger" id="hamburger-btn" role="button" aria-label="Open menu">
+    <div class="nav-hamburger" id="hamburger-btn" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </div>
   </nav>
