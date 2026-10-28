@@ -1522,3 +1522,43 @@ h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); }
   font-weight: 600;
   opacity: 0.85;
 }
+
+/* ===== BACK TO TOP BUTTON ===== */
+.aura-back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(198, 167, 94, 0.4);
+  color: #C6A75E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.aura-back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.aura-back-to-top:hover {
+  background: #C6A75E;
+  color: #0D0D0D;
+  border-color: #C6A75E;
+  box-shadow: 0 6px 20px rgba(198, 167, 94, 0.4);
+}
+

@@ -371,14 +371,38 @@ function initSavingSchemeWhatsAppLinks() {
   }
 }
 
+// Initialize Back to Top Button
+function initBackToTopButton() {
+  const btn = document.createElement('button');
+  btn.className = 'aura-back-to-top';
+  btn.setAttribute('aria-label', 'Back to top of page');
+  btn.innerHTML = '&#9650;';
+  document.body.appendChild(btn);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 // Hook into DOMContentLoaded
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     injectFloatingRatesWidget();
     initSavingSchemeWhatsAppLinks();
+    initBackToTopButton();
   });
 } else {
   injectFloatingRatesWidget();
   initSavingSchemeWhatsAppLinks();
+  initBackToTopButton();
 }
+
 
