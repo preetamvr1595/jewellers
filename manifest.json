@@ -1,0 +1,21 @@
+{
+  "name": "Aura Jewellers - Luxury Goldsmith & Maker",
+  "short_name": "AuraJewellers",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0d0d0d",
+  "theme_color": "#0d0d0d",
+  "description": "Bengaluru's premier 22K pure gold jewellers. 100% BIS & HUID Hallmark certified.",
+  "icons": [
+    {
+      "src": "/assets/images/hero_main.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/hero_main.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
