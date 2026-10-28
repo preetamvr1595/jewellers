@@ -24,6 +24,10 @@ app.use((req, res, next) => {
   next()
 })
 
+// Request Logger
+const logger = require('./middleware/logger')
+app.use(logger)
+
 // Static assets for Main Site
 const rootPath = path.resolve(__dirname, '..')
 app.use('/assets', express.static(path.resolve(rootPath, 'assets')))
