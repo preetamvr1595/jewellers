@@ -96,6 +96,10 @@ app.get('/api/health', (req, res) => {
   })
 })
 
+// Centralized error handler
+const errorHandler = require('./middleware/errorHandler')
+app.use(errorHandler)
+
 const PORT = process.env.PORT || 5000
 
 const startServer = async () => {
