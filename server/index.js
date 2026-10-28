@@ -11,8 +11,18 @@ const offerRoutes = require('./routes/offers')
 const rateRoutes = require('./routes/rates')
 
 const app = express()
+app.disable('x-powered-by')
 app.use(cors())
 app.use(express.json())
+
+// Basic HTTP security headers
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff')
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN')
+  res.setHeader('X-XSS-Protection', '1; mode=block')
+  res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin')
+  next()
+})
 
 // Static assets for Main Site
 const rootPath = path.resolve(__dirname, '..')
