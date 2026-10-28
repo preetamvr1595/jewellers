@@ -427,5 +427,15 @@ if (document.readyState === 'loading') {
   initBackToTopButton();
 }
 
+// Register Service Worker for offline performance
+if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch((err) => {
+      // SW registration failed silently in non-secure or development environments
+    });
+  });
+}
+
+
 
 
