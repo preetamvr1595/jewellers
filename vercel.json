@@ -1,6 +1,22 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
+  "outputDirectory": ".",
   "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/admin/assets/:match*",
+      "destination": "/client/dist/assets/:match*"
+    },
+    {
+      "source": "/admin/:match*",
+      "destination": "/client/dist/index.html"
+    },
+    {
+      "source": "/admin",
+      "destination": "/client/dist/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
