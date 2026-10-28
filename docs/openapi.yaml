@@ -1,0 +1,128 @@
+openapi: 3.0.3
+info:
+  title: MGS Jewellerys Commerce & Management API
+  description: RESTful APIs powering the MGS Jewellerys public luxury storefront and React Admin CMS portal.
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000
+    description: Local unified server
+paths:
+  /api/products:
+    get:
+      summary: Retrieve all products
+      description: Returns list of active jewelry items with hallmark, categories, images, and pricing.
+      responses:
+        '200':
+          description: List of products successfully retrieved
+    post:
+      summary: Create new jewelry product
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProductInput'
+      responses:
+        '201':
+          description: Product successfully created
+  /api/products/{id}:
+    put:
+      summary: Update existing product
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Product updated
+    delete:
+      summary: Delete product
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Product deleted
+  /api/rates:
+    get:
+      summary: Get live market gold and silver rates
+      responses:
+        '200':
+          description: Current gold and silver rates per gram
+    put:
+      summary: Update live rates
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Rates successfully updated
+  /api/offers:
+    get:
+      summary: Get active promotional offers
+      responses:
+        '200':
+          description: List of active seasonal/festival offers
+  /api/settings:
+    get:
+      summary: Get site settings
+      responses:
+        '200':
+          description: Branding and site configurations
+  /api/auth/login:
+    post:
+      summary: Administrator login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Authenticated successfully, JWT returned
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    ProductInput:
+      type: object
+      required:
+        - name
+        - price
+        - category
+      properties:
+        name:
+          type: string
+        price:
+          type: number
+        category:
+          type: string
+        weight:
+          type: string
+        purity:
+          type: string
+        hallmark:
+          type: string
+        images:
+          type: array
+          items:
+            type: string
