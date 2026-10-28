@@ -4923,6 +4923,12 @@
       "password": "$2b$10$Q3h7kbPXHiftbglyornivuZkbW7Lfvgv29HktNkweAXVDwrGXhu4S",
       "email": "admin@aurajewellers.com",
       "_id": "1778762245383"
+    },
+    {
+      "username": "admin@mgs.com",
+      "password": "$2b$10$WWNj2KefPKj.Rs79MWnZxOrZdmYuHAYPJue30TyjEkp5BxuobsB2O",
+      "email": "admin@mgs.com",
+      "_id": "1793182027710"
     }
   ]
 }

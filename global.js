@@ -128,6 +128,7 @@ async function updateTicker() {
       if (elDup) elDup.textContent = formatINR(val);
     };
 
+    
     updateRate('gold22', data.gold22 * 10);
     updateRate('gold24', data.gold24 * 10);
     updateRate('silver', data.silver * 1000);
