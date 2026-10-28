@@ -101,9 +101,9 @@ function renderActiveOffer(offer) {
 let activeFilter = 'bridal';
 
 function getWhatsAppMsg(productName) {
-  const baseMsg = `Hello MGS Jewellery! I'm interested in the *${productName}*. Please share the current price and availability.`;
+  const baseMsg = `Hello Aura Jewellers! I'm interested in the *${productName}*. Please share the current price and availability.`;
   const welcomeMsg = 
-    `\n\nWelcome to MGS Jewellerys, Davanagere \u2728\n\n` +
+    `\n\nWelcome to Aura Jewellers, Bengaluru \u2728\n\n` +
     `Thank you for contacting us. We are pleased to assist you with our exclusive jewellery collections and services.\n\n` +
     `By continuing this conversation, you agree to our privacy policy regarding the collection and processing of your information.\n\n` +
     `How may we assist you today?\n\n` +
@@ -138,7 +138,7 @@ document.querySelectorAll('.hero-thumb').forEach(thumb => {
       heroImg.style.transform = 'scale(1.05)';
       setTimeout(() => {
         heroImg.src = thumb.dataset.img;
-        heroImg.alt = thumb.dataset.name + ' \u2014 HUID/BIS Hallmark, MGS Jewellerys';
+        heroImg.alt = thumb.dataset.name + ' \u2014 HUID/BIS Hallmark, Aura Jewellers';
         heroImg.style.opacity = '1';
         heroImg.style.transform = 'scale(1)';
       }, 300);
@@ -177,7 +177,7 @@ window.calcMiniGold = function() {
   const weight = parseFloat(document.getElementById('mini-weight')?.value) || 0;
   const purity = parseInt(document.getElementById('mini-purity')?.value) || 22;
   const rate = window.liveGoldRates[purity] || 6842;
-  const wastage = (parseFloat(window.mgsSettings.wastageRate) / 100) || 0.0799;
+  const wastage = (parseFloat(window.auraSettings.wastageRate) / 100) || 0.0799;
   const total = weight * rate * (1 + wastage);
   const resultEl = document.getElementById('mini-result');
   if (resultEl) {
@@ -205,7 +205,7 @@ function initWhyCarousel() {
   dotsContainer.innerHTML = '';
   for (let i = 0; i < dotCount; i++) {
     const dot = document.createElement('button');
-    dot.className = `mgs-carousel-dot ${i === 0 ? 'active' : ''}`;
+    dot.className = `aura-carousel-dot ${i === 0 ? 'active' : ''}`;
     dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
     dotsContainer.appendChild(dot);
 
@@ -273,9 +273,9 @@ function initWhyCarousel() {
 // ==========================================
 function initPosterLightbox() {
   const adCard = document.getElementById('savings-ad-card');
-  const modal = document.getElementById('mgs-poster-modal');
+  const modal = document.getElementById('aura-poster-modal');
   const modalImg = document.getElementById('lightbox-img');
-  const closeBtn = document.getElementById('mgs-lightbox-close');
+  const closeBtn = document.getElementById('aura-lightbox-close');
 
   if (!adCard || !modal || !modalImg) return;
 

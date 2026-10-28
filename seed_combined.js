@@ -161,7 +161,7 @@ originalCategories.forEach((cat, catIdx) => {
     originalProducts.push({
       name: name,
       price: Math.round(basePrice),
-      description: `Exquisite 22K ${cat.key} from MGS Jewellerys Davanagere. Handcrafted with traditional craftsmanship and BIS/HUID certified for purity.`,
+      description: `Exquisite 22K ${cat.key} from Aura Jewellers Bengaluru. Handcrafted with traditional craftsmanship and BIS/HUID certified for purity.`,
       images: [img],
       hallmark: 'HUID',
       purity: '22K Gold (91.6%)',
@@ -373,7 +373,7 @@ Object.keys(nanoNames).forEach((category) => {
     const hallmark = category === "diamond" ? "HUID & IGI Certified" : "HUID Certified";
     const purity = category === "diamond" ? "18K Gold & VS Diamond" : "22K Gold (91.6%)";
 
-    const desc = `Bespoke handcrafted gold piece from MGS Jewellerys Davanagere. Inspiring premium gold background aesthetics, BIS and HUID hallmarked for pristine quality.`;
+    const desc = `Bespoke handcrafted gold piece from Aura Jewellers Bengaluru. Inspiring premium gold background aesthetics, BIS and HUID hallmarked for pristine quality.`;
 
     nanoProducts.push({
       name: catNames[i],

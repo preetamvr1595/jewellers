@@ -60,7 +60,7 @@ window.triggerAnimations();
 // \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 // DYNAMIC SETTINGS & GOLD RATES
 // \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
-window.mgsSettings = {};
+window.auraSettings = {};
 window.liveGoldRates = { 22: 14225, 24: 14936, silver: 285 };
 
 // Global API Base URL resolver
@@ -75,7 +75,7 @@ window.getApiBase = () => {
   
   // If hosted on Vercel or any other static platform, point to the live Render backend
   if (hostname.includes('vercel.app') || (!hostname.includes('onrender.com') && hostname !== 'localhost')) {
-    return 'https://mgsjewellerys.bond';
+    return 'https://aurajewellers.com';
   }
   
   // Default same-origin (when running directly on the Render server)
@@ -101,7 +101,7 @@ async function fetchSettings() {
   try {
     const res = await fetch(window.getApiBase() + '/api/settings');
     const data = await res.json();
-    window.mgsSettings = data;
+    window.auraSettings = data;
     applySettings(data);
   } catch (e) {
     console.error('Failed to fetch settings', e);
@@ -158,11 +158,11 @@ setInterval(updateTicker, 60000); // Every 1 minute
 // TOAST NOTIFICATION
 // \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function showToast(message, type = 'success') {
-  const existing = document.querySelector('.mgs-toast');
+  const existing = document.querySelector('.aura-toast');
   if (existing) existing.remove();
 
   const toast = document.createElement('div');
-  toast.className = 'mgs-toast';
+  toast.className = 'aura-toast';
   toast.style.cssText = `
     position: fixed;
     bottom: 2rem;
@@ -200,76 +200,76 @@ function showToast(message, type = 'success') {
 // \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function injectFloatingRatesWidget() {
   // Prevent duplicate injection
-  if (document.getElementById('mgs-rates-tab')) return;
+  if (document.getElementById('aura-rates-tab')) return;
 
   const container = document.createElement('div');
-  container.className = 'mgs-rates-widget-container';
+  container.className = 'aura-rates-widget-container';
   container.innerHTML = `
     <!-- Floating Tab Trigger -->
-    <div class="mgs-rates-floating-tab" id="mgs-rates-tab" title="View Today's Live Rates">
-      <div class="mgs-tab-content">
-        <svg class="mgs-tab-icon" viewBox="0 0 24 24" fill="currentColor">
+    <div class="aura-rates-floating-tab" id="aura-rates-tab" title="View Today's Live Rates">
+      <div class="aura-tab-content">
+        <svg class="aura-tab-icon" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
         </svg>
-        <span class="mgs-tab-text">RATES</span>
+        <span class="aura-tab-text">RATES</span>
       </div>
     </div>
 
     <!-- Slide-out Sidebar Panel -->
-    <div class="mgs-rates-panel" id="mgs-rates-panel">
-      <div class="mgs-rates-panel-header">
+    <div class="aura-rates-panel" id="aura-rates-panel">
+      <div class="aura-rates-panel-header">
         <div>
-          <h3 class="mgs-panel-title">Today's Rates</h3>
-          <div class="mgs-panel-date" id="mgs-panel-date">Loading date...</div>
+          <h3 class="aura-panel-title">Today's Rates</h3>
+          <div class="aura-panel-date" id="aura-panel-date">Loading date...</div>
         </div>
-        <button class="mgs-panel-close-btn" id="mgs-panel-close" aria-label="Close rates panel">\u2715</button>
+        <button class="aura-panel-close-btn" id="aura-panel-close" aria-label="Close rates panel">\u2715</button>
       </div>
       
-      <div class="mgs-rates-panel-body">
+      <div class="aura-rates-panel-body">
         <!-- Rate Card 1: 22K Gold -->
-        <div class="mgs-rate-card gold-22k">
-          <div class="mgs-rate-card-icon">\ud83e\ude99</div>
-          <div class="mgs-rate-card-details">
-            <span class="mgs-rate-label">Gold Rate (22K)</span>
-            <span class="mgs-rate-value" id="mgs-float-gold22">\u20b96,842 <span class="mgs-unit">/ gram</span></span>
+        <div class="aura-rate-card gold-22k">
+          <div class="aura-rate-card-icon">\ud83e\ude99</div>
+          <div class="aura-rate-card-details">
+            <span class="aura-rate-label">Gold Rate (22K)</span>
+            <span class="aura-rate-value" id="aura-float-gold22">\u20b96,842 <span class="aura-unit">/ gram</span></span>
           </div>
-          <span class="mgs-rate-change positive" id="mgs-float-gold22c">\u25b2 0.4%</span>
+          <span class="aura-rate-change positive" id="aura-float-gold22c">\u25b2 0.4%</span>
         </div>
 
         <!-- Rate Card 2: 24K Gold -->
-        <div class="mgs-rate-card gold-24k">
-          <div class="mgs-rate-card-icon">\ud83d\udc51</div>
-          <div class="mgs-rate-card-details">
-            <span class="mgs-rate-label">Gold Rate (24K)</span>
-            <span class="mgs-rate-value" id="mgs-float-gold24">\u20b97,490 <span class="mgs-unit">/ gram</span></span>
+        <div class="aura-rate-card gold-24k">
+          <div class="aura-rate-card-icon">\ud83d\udc51</div>
+          <div class="aura-rate-card-details">
+            <span class="aura-rate-label">Gold Rate (24K)</span>
+            <span class="aura-rate-value" id="aura-float-gold24">\u20b97,490 <span class="aura-unit">/ gram</span></span>
           </div>
-          <span class="mgs-rate-change positive" id="mgs-float-gold24c">\u25b2 0.3%</span>
+          <span class="aura-rate-change positive" id="aura-float-gold24c">\u25b2 0.3%</span>
         </div>
 
         <!-- Rate Card 3: Silver -->
-        <div class="mgs-rate-card silver-rate">
-          <div class="mgs-rate-card-icon">\ud83e\udd48</div>
-          <div class="mgs-rate-card-details">
-            <span class="mgs-rate-label">Silver Rate</span>
-            <span class="mgs-rate-value" id="mgs-float-silver">\u20b989.2 <span class="mgs-unit">/ gram</span></span>
+        <div class="aura-rate-card silver-rate">
+          <div class="aura-rate-card-icon">\ud83e\udd48</div>
+          <div class="aura-rate-card-details">
+            <span class="aura-rate-label">Silver Rate</span>
+            <span class="aura-rate-value" id="aura-float-silver">\u20b989.2 <span class="aura-unit">/ gram</span></span>
           </div>
-          <span class="mgs-rate-change negative" id="mgs-float-silverc">\u25bc 0.1%</span>
+          <span class="aura-rate-change negative" id="aura-float-silverc">\u25bc 0.1%</span>
         </div>
       </div>
       
-      <div class="mgs-rates-panel-footer">
-        <div class="mgs-footer-note">\u2726 Rates updated dynamically \u2726</div>
-        <a href="calculator.html" class="mgs-calc-shortcut-btn">Use Gold Calculator \u25b8</a>
+      <div class="aura-rates-panel-footer">
+        <div class="aura-footer-note">\u2726 Rates updated dynamically \u2726</div>
+        <a href="calculator.html" class="aura-calc-shortcut-btn">Use Gold Calculator \u25b8</a>
       </div>
     </div>
 
     <!-- Overlay Backing -->
-    <div class="mgs-rates-overlay" id="mgs-rates-overlay"></div>
+    <div class="aura-rates-overlay" id="aura-rates-overlay"></div>
   `;
   document.body.appendChild(container);
 
   // Set today's date formatted beautifully
-  const dateEl = document.getElementById('mgs-panel-date');
+  const dateEl = document.getElementById('aura-panel-date');
   if (dateEl) {
     const today = new Date();
     const options = { day: 'numeric', month: 'short', year: 'numeric' };
@@ -277,10 +277,10 @@ function injectFloatingRatesWidget() {
   }
 
   // Toggle Panel Open/Close
-  const tabBtn = document.getElementById('mgs-rates-tab');
-  const panel = document.getElementById('mgs-rates-panel');
-  const overlay = document.getElementById('mgs-rates-overlay');
-  const closeBtn = document.getElementById('mgs-panel-close');
+  const tabBtn = document.getElementById('aura-rates-tab');
+  const panel = document.getElementById('aura-rates-panel');
+  const overlay = document.getElementById('aura-rates-overlay');
+  const closeBtn = document.getElementById('aura-panel-close');
 
   const openPanel = () => {
     panel?.classList.add('open');
@@ -313,11 +313,11 @@ function injectFloatingRatesWidget() {
 
 // Function to update float widget with live rate values
 window.updateFloatRates = () => {
-  const g22Val = document.getElementById('mgs-float-gold22');
-  const g24Val = document.getElementById('mgs-float-gold24');
-  const silVal = document.getElementById('mgs-float-silver');
+  const g22Val = document.getElementById('aura-float-gold22');
+  const g24Val = document.getElementById('aura-float-gold24');
+  const silVal = document.getElementById('aura-float-silver');
 
-  const fmt = (v, unit = '/ gram') => `\u20b9${Math.round(v).toLocaleString('en-IN')} <span class="mgs-unit">${unit}</span>`;
+  const fmt = (v, unit = '/ gram') => `\u20b9${Math.round(v).toLocaleString('en-IN')} <span class="aura-unit">${unit}</span>`;
 
   if (window.liveGoldRates) {
     let r22 = window.liveGoldRates[22] || 6842;
@@ -336,23 +336,23 @@ function initSavingSchemeWhatsAppLinks() {
   const phone = '917892314633';
   
   const commonPlanText = 
-    `\n\n\u2728 *Introducing the MGS Jewellerys Aurum Advantage Saving Plan* \u2728\n\n` +
+    `\n\n\u2728 *Introducing the Aura Jewellerys Aurum Advantage Saving Plan* \u2728\n\n` +
     `Turn your jewellery dreams into reality with our exclusive monthly savings scheme designed for smart and secure gold investments.\n\n` +
     `\u2705 Flexible Monthly Savings Plans\n` +
-    `\u2705 Special Bonus Benefits from MGS\n` +
+    `\u2705 Special Bonus Benefits from Aura\n` +
     `\u2705 No Making Charges\n` +
     `\u2705 Exclusive Jewellery Purchase Advantages\n\n` +
     `\uD83D\uDCB0 *Plan Options:*\n` +
     `\uD83D\uDD38 \u20B91000 per month - 12 Months\n` +
     `\uD83D\uDD38 \u20B92000 per month - 15 Months\n\n` +
-    `Begin your savings journey today and enjoy premium benefits with MGS Jewellerys.\n\n` +
-    `\uD83D\uDCCD Visit MGS Jewellerys, Davanagere\n` +
+    `Begin your savings journey today and enjoy premium benefits with Aura Jewellerys.\n\n` +
+    `\uD83D\uDCCD Visit Aura Jewellers, Bengaluru\n` +
     `\uD83D\uDCDE Contact us for enrollment and complete scheme details.`;
 
-  const bannerText = `Hello MGS! I'd like to know more details about your Aurum Advantage Gold Saving Schemes.` + commonPlanText;
-  const plan12Text = `Hello MGS! I'd like to enroll in the Standard 12-Month Gold Saving Scheme (\u20B91,000/month).` + commonPlanText;
-  const plan15Text = `Hello MGS! I'd like to enroll in the Premium 15-Month Gold Saving Scheme (\u20B92,000/month).` + commonPlanText;
-  const plan18Text = `Hello MGS! I'm extremely interested in pre-registering for your Upcoming Elite 18-Month Scheme with No Wastage and No Making charges.` + commonPlanText;
+  const bannerText = `Hello Aura! I'd like to know more details about your Aurum Advantage Gold Saving Schemes.` + commonPlanText;
+  const plan12Text = `Hello Aura! I'd like to enroll in the Standard 12-Month Gold Saving Scheme (\u20B91,000/month).` + commonPlanText;
+  const plan15Text = `Hello Aura! I'd like to enroll in the Premium 15-Month Gold Saving Scheme (\u20B92,000/month).` + commonPlanText;
+  const plan18Text = `Hello Aura! I'm extremely interested in pre-registering for your Upcoming Elite 18-Month Scheme with No Wastage and No Making charges.` + commonPlanText;
 
   const links = {
     'wa-saving-ask-details': bannerText,

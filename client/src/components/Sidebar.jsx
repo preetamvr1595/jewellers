@@ -14,7 +14,7 @@ export default function Sidebar(){
   return (
     <aside className="w-72 p-6 border-r border-gray-100 bg-ivory">
       <div className="mb-10">
-        <div className="text-gold text-2xl font-serif">MGS Jewellerys</div>
+        <div className="text-gold text-2xl font-serif">Aura Jewellers</div>
       </div>
       <nav className="space-y-2">
         <NavItem to="/admin">Dashboard</NavItem>

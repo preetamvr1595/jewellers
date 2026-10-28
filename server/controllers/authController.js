@@ -9,7 +9,7 @@ exports.login = async (req, res) => {
   const user = storage.findUser(email || '')
   if (!user) {
     // Fallback for first-time setup - create admin
-    if (email && email.toLowerCase() === 'admin@mgs.com' && password === 'Password123') {
+    if (email && (email.toLowerCase() === 'admin@aurajewellers.com' || email.toLowerCase() === 'admin@mgs.com') && password === 'Password123') {
       const hashedPassword = await bcrypt.hash(password, 10)
       const newUser = storage.createUser({ username: email, password: hashedPassword, email })
       const token = jwt.sign({ id: newUser._id, email: newUser.email }, process.env.JWT_SECRET || 'secret', { expiresIn: '7d' })

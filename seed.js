@@ -8,7 +8,7 @@ const files = fs.readdirSync(imageDir).filter(f => f.endsWith('.jpeg') || f.ends
 const products = files.map((file, i) => ({
   name: `Exquisite Item ${i + 1}`,
   price: Math.floor(Math.random() * 50000) + 10000,
-  description: "A beautiful handcrafted piece from MGS Jewellerys Davanagere. BIS Hallmarked for purity and quality.",
+  description: "A beautiful handcrafted piece from Aura Jewellers Bengaluru. BIS Hallmarked for purity and quality.",
   images: [`assets/images/${file}`],
   hallmark: "HUID",
   purity: "22k (91.6%)",

@@ -816,14 +816,14 @@ body { padding-top: calc(2.1rem + 4.5rem); }
 /* ==========================================================================
    WHY CHOOSE CAROUSEL (HOMEPAGE)
    ========================================================================== */
-.mgs-why-choose-section {
+.aura-why-choose-section {
   margin-top: 6rem;
   padding: 6rem 7% 4rem;
   border-top: 1px solid var(--border);
   background: var(--ivory);
 }
 
-.mgs-carousel-wrapper {
+.aura-carousel-wrapper {
   position: relative;
   max-width: 1000px;
   margin: 3rem auto 0;
@@ -831,18 +831,18 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   padding: 1rem;
 }
 
-.mgs-carousel-track-container {
+.aura-carousel-track-container {
   overflow: hidden;
   width: 100%;
 }
 
-.mgs-carousel-track {
+.aura-carousel-track {
   display: flex;
   transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   width: 100%;
 }
 
-.mgs-carousel-slide {
+.aura-carousel-slide {
   min-width: 100%;
   flex-shrink: 0;
   padding: 1rem;
@@ -851,7 +851,7 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   box-sizing: border-box;
 }
 
-.mgs-why-card {
+.aura-why-card {
   background: #FFFFFF;
   border: 1px solid rgba(198, 167, 94, 0.15);
   border-radius: 16px;
@@ -867,13 +867,13 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   gap: 1.5rem;
 }
 
-.mgs-why-card:hover {
+.aura-why-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 35px rgba(198, 167, 94, 0.12);
   border-color: rgba(198, 167, 94, 0.35);
 }
 
-.mgs-why-icon-wrapper {
+.aura-why-icon-wrapper {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -886,32 +886,32 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   box-shadow: 0 4px 10px rgba(198, 167, 94, 0.05);
 }
 
-.mgs-why-icon-wrapper svg {
+.aura-why-icon-wrapper svg {
   width: 40px;
   height: 40px;
 }
 
-.mgs-why-card h3 {
+.aura-why-card h3 {
   font-family: var(--font-serif);
   font-size: 1.8rem;
   color: var(--gold-dim);
   font-weight: 600;
 }
 
-.mgs-why-card p {
+.aura-why-card p {
   font-size: 0.95rem;
   color: var(--body-text);
   line-height: 1.7;
 }
 
-.mgs-carousel-dots {
+.aura-carousel-dots {
   display: flex;
   justify-content: center;
   gap: 0.8rem;
   margin-top: 2rem;
 }
 
-.mgs-carousel-dot {
+.aura-carousel-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -922,7 +922,7 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   padding: 0;
 }
 
-.mgs-carousel-dot.active {
+.aura-carousel-dot.active {
   background: var(--gold-gradient);
   transform: scale(1.2);
 }
@@ -930,20 +930,20 @@ body { padding-top: calc(2.1rem + 4.5rem); }
 /* ==========================================================================
    3 SIMPLE STEPS SECTION (HOMEPAGE - VERTICAL ALTERNATING TIMELINE)
    ========================================================================== */
-.mgs-steps-section {
+.aura-steps-section {
   padding: 8rem 7%;
   background: var(--section-contrast);
   border-top: 1px solid var(--border);
 }
 
-.mgs-timeline-container {
+.aura-timeline-container {
   position: relative;
   max-width: 900px;
   margin: 4rem auto;
   padding: 2rem 0;
 }
 
-.mgs-timeline-line {
+.aura-timeline-line {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -954,7 +954,7 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   z-index: 1;
 }
 
-.mgs-timeline-step {
+.aura-timeline-step {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -963,33 +963,33 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   z-index: 2;
 }
 
-.mgs-timeline-step:last-child {
+.aura-timeline-step:last-child {
   margin-bottom: 0;
 }
 
-.mgs-timeline-step:nth-child(even) .mgs-step-graphic-container {
+.aura-timeline-step:nth-child(even) .aura-step-graphic-container {
   order: 2;
 }
 
-.mgs-timeline-step:nth-child(even) .mgs-step-info-container {
+.aura-timeline-step:nth-child(even) .aura-step-info-container {
   order: 1;
   text-align: right;
 }
 
-.mgs-step-graphic-container {
+.aura-step-graphic-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mgs-step-info-container {
+.aura-step-info-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
 
-.mgs-step-badge {
+.aura-step-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1011,7 +1011,7 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   transition: var(--transition);
 }
 
-.mgs-timeline-step:hover .mgs-step-badge {
+.aura-timeline-step:hover .aura-step-badge {
   background: var(--gold-gradient);
   color: #FFFFFF;
   border-color: transparent;
@@ -1019,20 +1019,20 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   box-shadow: 0 0 25px rgba(198, 167, 94, 0.35);
 }
 
-.mgs-step-title {
+.aura-step-title {
   font-family: var(--font-serif);
   font-size: 1.8rem;
   color: var(--text-dark);
   font-weight: 700;
 }
 
-.mgs-step-desc {
+.aura-step-desc {
   font-size: 0.95rem;
   color: var(--body-text);
   line-height: 1.7;
 }
 
-.mgs-step-graphic {
+.aura-step-graphic {
   background: #FFFFFF;
   border: 1px solid rgba(198, 167, 94, 0.15);
   border-radius: 16px;
@@ -1046,13 +1046,13 @@ body { padding-top: calc(2.1rem + 4.5rem); }
   align-items: center;
 }
 
-.mgs-step-graphic:hover {
+.aura-step-graphic:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(198, 167, 94, 0.12);
   border-color: rgba(198, 167, 94, 0.3);
 }
 
-.mgs-step-graphic svg {
+.aura-step-graphic svg {
   width: 100%;
   height: auto;
   max-height: 220px;
@@ -1060,42 +1060,42 @@ body { padding-top: calc(2.1rem + 4.5rem); }
 
 /* Responsive Timeline */
 @media (max-width: 768px) {
-  .mgs-timeline-line {
+  .aura-timeline-line {
     left: 30px;
     transform: none;
   }
 
-  .mgs-timeline-step {
+  .aura-timeline-step {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding-left: 70px;
     margin-bottom: 5rem;
   }
 
-  .mgs-timeline-step:nth-child(even) .mgs-step-graphic-container {
+  .aura-timeline-step:nth-child(even) .aura-step-graphic-container {
     order: 1;
   }
 
-  .mgs-timeline-step:nth-child(even) .mgs-step-info-container {
+  .aura-timeline-step:nth-child(even) .aura-step-info-container {
     order: 2;
     text-align: left;
   }
 
-  .mgs-step-badge {
+  .aura-step-badge {
     left: 30px;
     transform: translateX(-50%);
     top: 0;
   }
 
-  .mgs-timeline-step:hover .mgs-step-badge {
+  .aura-timeline-step:hover .aura-step-badge {
     transform: translateX(-50%) scale(1.1);
   }
 
-  .mgs-step-graphic-container {
+  .aura-step-graphic-container {
     justify-content: flex-start;
   }
 
-  .mgs-step-graphic {
+  .aura-step-graphic {
     max-width: 100%;
   }
 }
