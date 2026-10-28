@@ -392,6 +392,28 @@ function initBackToTopButton() {
   });
 }
 
+// Global Luxury Toast Notification Utility
+window.showToast = (message, duration = 3000) => {
+  let container = document.querySelector('.aura-toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'aura-toast-container';
+    document.body.appendChild(container);
+  }
+
+  const toast = document.createElement('div');
+  toast.className = 'aura-toast';
+  toast.innerHTML = `<span>✦</span> <span>${message}</span>`;
+  container.appendChild(toast);
+
+  requestAnimationFrame(() => toast.classList.add('show'));
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => toast.remove(), 400);
+  }, duration);
+};
+
 // Hook into DOMContentLoaded
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
@@ -404,5 +426,6 @@ if (document.readyState === 'loading') {
   initSavingSchemeWhatsAppLinks();
   initBackToTopButton();
 }
+
 
 
