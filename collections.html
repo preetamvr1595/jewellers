@@ -623,15 +623,15 @@
       <button class="filter-btn" data-filter="pendants">Pendants</button>
     </div>
     <div class="search-box">
-      <span class="search-icon">⌕</span>
-      <input type="text" id="search-input" placeholder="Search jewellery…" autocomplete="off">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input type="text" id="search-input" placeholder="Search jewellery…" autocomplete="off" aria-label="Search jewelry collections">
     </div>
-    <span class="results-count" id="results-count"><span id="count-num">30</span> pieces</span>
+    <span class="results-count" id="results-count" aria-live="polite"><span id="count-num">30</span> pieces</span>
   </div>
 
   <!-- ===== MAIN COLLECTIONS GRID ===== -->
-  <section id="collections-main">
-    <div class="product-grid" id="product-grid">
+  <section id="collections-main" aria-label="Jewellery Catalog">
+    <div class="product-grid" id="product-grid" role="region" aria-live="polite" aria-label="Product listings">
       <!-- Injected by JS -->
     </div>
     <div id="load-more-wrap">
