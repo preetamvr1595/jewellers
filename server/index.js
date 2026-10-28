@@ -81,6 +81,21 @@ app.use('/api/settings', settingRoutes)
 app.use('/api/offers', offerRoutes)
 app.use('/api/rates', rateRoutes)
 
+// System Health & Diagnostics Endpoint
+app.get('/api/health', (req, res) => {
+  res.json({
+    status: 'ok',
+    uptimeSeconds: Math.floor(process.uptime()),
+    timestamp: new Date().toISOString(),
+    environment: process.env.NODE_ENV || 'development',
+    memoryUsageMB: {
+      rss: Math.round(process.memoryUsage().rss / 1024 / 1024),
+      heapTotal: Math.round(process.memoryUsage().heapTotal / 1024 / 1024),
+      heapUsed: Math.round(process.memoryUsage().heapUsed / 1024 / 1024)
+    }
+  })
+})
+
 const PORT = process.env.PORT || 5000
 
 const startServer = async () => {
