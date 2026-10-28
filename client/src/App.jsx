@@ -9,6 +9,7 @@ import ContentManagement from './pages/ContentManagement'
 import Orders from './pages/Orders'
 import Offers from './pages/Offers'
 import LiveRates from './pages/LiveRates'
+import NotFound from './pages/NotFound'
 
 export default function App(){
   return (
@@ -25,6 +26,7 @@ export default function App(){
       </Route>
 
       <Route path="/" element={<Navigate to="/admin" />} />
+      <Route path="*" element={<NotFound/>} />
     </Routes>
   )
 }
