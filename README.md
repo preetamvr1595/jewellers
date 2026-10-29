@@ -33,14 +33,14 @@ graph TD
 
 ## 🌐 Public Storefront Pages
 
-| Page | File | Description |
+| Page | Location | Description |
 |---|---|---|
-| **Homepage** | `index.html` | Hero showcase, interactive collection highlights, festive offers, heritage story, and store locator |
-| **Collections** | `collections.html` | Filterable catalog with search, category facets, HUID/BIS purity badges, and inquiry modals |
-| **Festival Offers** | `offers.html` | Active promotional campaigns, countdown timers, and Old Gold Exchange valuation |
-| **Heritage & Craft** | `heritage.html` | Brand narrative, master artisan craftsmanship, and 24-year legacy |
-| **Gold Calculator** | `calculator.html` | Live gold purity valuation, wastage, making charges, and EMI amortization schedule |
-| **Admin Portal** | `/admin/` | Integrated React Admin CMS for real-time inventory and pricing management |
+| **Homepage** | `frontend/index.html` | Hero showcase, interactive collection highlights, festive offers, heritage story, and store locator |
+| **Collections** | `frontend/collections.html` | Filterable catalog with search, category facets, HUID/BIS purity badges, and inquiry modals |
+| **Festival Offers** | `frontend/offers.html` | Active promotional campaigns, countdown timers, and Old Gold Exchange valuation |
+| **Heritage & Craft** | `frontend/heritage.html` | Brand narrative, master artisan craftsmanship, and 24-year legacy |
+| **Gold Calculator** | `frontend/calculator.html` | Live gold purity valuation, wastage, making charges, and EMI amortization schedule |
+| **Admin Portal** | `admin/` | Integrated React Admin CMS for real-time inventory and pricing management |
 
 ---
 
@@ -50,25 +50,25 @@ graph TD
 - **Node.js** v18+ and **npm** v9+
 - Optional: MongoDB Atlas connection string (or use automated local JSON storage mode)
 
-### 2. Dependency Installation
+### 2. Dependency Installation & Admin Build
 ```bash
-# Install root, client, and server dependencies
+# Build admin dashboard
 npm run build
 ```
 
 ### 3. Running the Unified Server
 ```bash
-cd server
-node index.js
+cd backend
+node server.js
 ```
 The server will boot on `http://localhost:5000/`, simultaneously serving:
-- **Public Luxury Website:** `http://localhost:5000/`
-- **Admin Dashboard:** `http://localhost:5000/admin/`
+- **Public Luxury Website:** `http://localhost:5000/` (from `frontend/`)
+- **Admin Dashboard:** `http://localhost:5000/admin/` (from `admin/dist/`)
 - **REST APIs:** `http://localhost:5000/api/`
 
-### 4. Running Client in Hot-Reload Dev Mode (Optional)
+### 4. Running Admin in Hot-Reload Dev Mode (Optional)
 ```bash
-cd client
+cd admin
 npm run dev
 ```
 Accessible at `http://localhost:5173/admin/` with instant Vite HMR.

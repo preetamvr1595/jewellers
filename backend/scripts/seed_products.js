@@ -182,7 +182,7 @@ categories.forEach((cat, catIdx) => {
 console.log(`Generated ${products.length} products across ${categories.length} categories`);
 
 // Read existing data and update products
-const dataPath = path.join(__dirname, 'server', 'data.json');
+const dataPath = path.resolve(__dirname, '..', 'data.json');
 let db = { products: [], collections: [], settings: [], offers: [] };
 
 try {

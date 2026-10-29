@@ -1,5 +1,5 @@
 const axios = require('axios')
-const storage = require('../scripts/storage')
+const storage = require('../storage')
 
 let cache = {
   data: null,

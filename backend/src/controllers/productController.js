@@ -1,4 +1,4 @@
-const storage = require('../scripts/storage')
+const storage = require('../storage')
 
 exports.list = (req, res) => {
   const items = storage.find('products')

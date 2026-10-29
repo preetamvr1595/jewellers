@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "cd server && node index.js",
-    "dev": "cd server && node index.js",
-    "static-only": "npx http-server -p 8000",
-    "build": "cd client && npm install && npm run build"
+    "start": "cd backend && node server.js",
+    "dev": "cd backend && node server.js",
+    "admin:dev": "cd admin && npm run dev",
+    "admin:build": "cd admin && npm run build",
+    "static-only": "npx http-server frontend -p 8000",
+    "build": "cd admin && npm install && npm run build",
+    "verify-db": "cd backend && npm run verify-db"
   }
 }

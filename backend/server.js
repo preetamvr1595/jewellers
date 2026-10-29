@@ -3,12 +3,12 @@ const express = require('express')
 const cors = require('cors')
 const path = require('path')
 const fs = require('fs')
-const authRoutes = require('./routes/auth')
-const productRoutes = require('./routes/products')
-const uploadRoutes = require('./routes/upload')
-const settingRoutes = require('./routes/settings')
-const offerRoutes = require('./routes/offers')
-const rateRoutes = require('./routes/rates')
+const authRoutes = require('./src/routes/auth')
+const productRoutes = require('./src/routes/products')
+const uploadRoutes = require('./src/routes/upload')
+const settingRoutes = require('./src/routes/settings')
+const offerRoutes = require('./src/routes/offers')
+const rateRoutes = require('./src/routes/rates')
 
 const app = express()
 app.disable('x-powered-by')
@@ -25,42 +25,44 @@ app.use((req, res, next) => {
 })
 
 // Request Logger
-const logger = require('./middleware/logger')
+const logger = require('./src/middleware/logger')
 app.use(logger)
 
-// Static assets for Main Site
+// Root path = project root (one level up from backend/)
 const rootPath = path.resolve(__dirname, '..')
-app.use('/assets', express.static(path.resolve(rootPath, 'assets')))
+
+// Static assets for Main Site (frontend/assets)
+app.use('/assets', express.static(path.resolve(rootPath, 'frontend', 'assets')))
 
 // Static assets for Admin Dashboard (Vite build folder)
-const adminDist = path.resolve(rootPath, 'client', 'dist')
+const adminDist = path.resolve(rootPath, 'admin', 'dist')
 if (fs.existsSync(adminDist)) {
-  app.use('/assets', express.static(path.resolve(adminDist, 'assets')))
+  app.use('/admin/assets', express.static(path.resolve(adminDist, 'assets')))
   app.use('/admin', express.static(adminDist))
   app.get('/admin/*', (req, res) => {
     res.sendFile(path.resolve(adminDist, 'index.html'))
   })
 }
 
-// Explicit endpoints for SEO Sitemap and Robots.txt to avoid general HTTP fetch errors and set explicit headers
+// Explicit endpoints for SEO Sitemap and Robots.txt
 app.get('/sitemap.xml', (req, res) => {
   res.header('Content-Type', 'application/xml');
   res.header('Cache-Control', 'public, max-age=86400');
   console.log(`[SEO] sitemap.xml requested by user-agent: ${req.headers['user-agent'] || 'Unknown'}`);
-  res.sendFile(path.resolve(rootPath, 'sitemap.xml'));
+  res.sendFile(path.resolve(rootPath, 'frontend', 'sitemap.xml'));
 });
 
 app.get('/robots.txt', (req, res) => {
   res.header('Content-Type', 'text/plain');
   res.header('Cache-Control', 'public, max-age=86400');
   console.log(`[SEO] robots.txt requested by user-agent: ${req.headers['user-agent'] || 'Unknown'}`);
-  res.sendFile(path.resolve(rootPath, 'robots.txt'));
+  res.sendFile(path.resolve(rootPath, 'frontend', 'robots.txt'));
 });
 
-// Serve top-level static site with custom headers to prevent aggressive caching and force UTF-8 encoding
-app.use('/', express.static(rootPath, {
+// Serve frontend static pages with custom headers (UTF-8, no-cache)
+const frontendPath = path.resolve(rootPath, 'frontend')
+app.use('/', express.static(frontendPath, {
   setHeaders: (res, filePath) => {
-    // Force UTF-8 character encoding for HTML, JS and CSS to ensure emojis and ticks render correctly
     if (filePath.endsWith('.html')) {
       res.setHeader('Content-Type', 'text/html; charset=utf-8');
       res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
@@ -74,8 +76,9 @@ app.use('/', express.static(rootPath, {
   }
 }))
 
+
 // serve uploaded files
-app.use('/uploads', express.static(path.resolve(rootPath, 'server', 'uploads')))
+app.use('/uploads', express.static(path.resolve(__dirname, 'uploads')))
 
 // API Routes
 app.use('/api/auth', authRoutes)
@@ -101,7 +104,7 @@ app.get('/api/health', (req, res) => {
 })
 
 // Centralized error handler
-const errorHandler = require('./middleware/errorHandler')
+const errorHandler = require('./src/middleware/errorHandler')
 app.use(errorHandler)
 
 const PORT = process.env.PORT || 5000
@@ -155,7 +158,6 @@ const startServer = async () => {
 
         if (newProductsToAdd.length > 0) {
           console.log(`[Database] Found ${newProductsToAdd.length} new local products to add. Smart-merging to Atlas...`);
-          // Prepend new local products to preserve their order/appearance at the top
           mergedData.products = [...newProductsToAdd, ...backupProducts];
           
           await DBBackup.updateOne(
@@ -168,7 +170,7 @@ const startServer = async () => {
           console.log('[Database] No new local products to merge.');
         }
 
-        // Write the merged data back to the server data.json
+        // Write the merged data back to the backend data.json
         fs.writeFileSync(dataPath, JSON.stringify(mergedData, null, 2));
         console.log('[Database] Successfully restored/merged database to local data.json.');
       } else {
@@ -190,7 +192,7 @@ const startServer = async () => {
     console.log('[Database] No MONGO_URI/MONGODB_URI found. Operating in local JSON mode only.');
   }
 
-  app.listen(PORT, () => console.log('Server running on', PORT));
+  app.listen(PORT, () => console.log('[Server] Running on port', PORT));
 };
 
 startServer();

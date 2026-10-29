@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const storage = require('../scripts/storage')
+const storage = require('../storage')
 const bcrypt = require('bcrypt')
 
 exports.login = async (req, res) => {
@@ -17,6 +17,7 @@ exports.login = async (req, res) => {
     }
     return res.status(401).json({ message: 'Invalid credentials' })
   }
+
 
   const ok = await bcrypt.compare(password, user.password)
   if (!ok) return res.status(401).json({ message: 'Invalid credentials' })

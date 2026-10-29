@@ -27,7 +27,7 @@ exports.upload = (req,res)=>{
     })
   } else {
     // Local storage fallback
-    const uploadsDir = path.join(__dirname, '..', 'uploads')
+    const uploadsDir = path.join(__dirname, '..', '..', 'uploads')
     if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir)
     
     const urls = req.files.map(file => {

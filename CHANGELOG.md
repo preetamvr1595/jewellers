@@ -2,6 +2,16 @@
 
 All notable changes to the MGS Jewellerys Commerce & Management platform are documented in this file.
 
+## [1.3.0] - 2026-10-29
+
+### Changed & Cleaned
+- **Clean 3-Tier Architecture**: Modularized codebase into dedicated `frontend/` (storefront), `admin/` (React CMS), and `backend/` (Express REST API) domains.
+- **Deduplication**: Removed all redundant copies in root (`calculator.html`, `collections.html`, `heritage.html`, `index.html`, `offers.html`, `global.css`, `index.css`, `style.css`, `global.js`, `index.js`, `manifest.json`, `sw.js`, `robots.txt`, `sitemap.xml`, `assets/`, seed files) and retired superseded `server/` and `client/` directories.
+- **Service Layer Modularization**: Created canonical `backend/src/storage.js` for data persistence, unified controller imports, and resolved upload path bindings.
+- **Configuration Alignment**: Updated `package.json`, `vercel.json` rewrites, and `.github/workflows/ci.yml` to target `admin/` and `backend/`.
+
+---
+
 ## [1.2.0] - 2026-10-28
 
 ### Added

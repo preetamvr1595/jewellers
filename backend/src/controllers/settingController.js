@@ -1,4 +1,4 @@
-const storage = require('../scripts/storage')
+const storage = require('../storage')
 
 exports.getSettings = (req, res) => {
   const settings = storage.getSetting('collections') || []

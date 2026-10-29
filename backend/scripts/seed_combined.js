@@ -396,7 +396,7 @@ console.log(`Generated ${nanoProducts.length} premium nano-banana products.`);
 // Part 3: Merge and Write to server/data.json
 // ==========================================
 
-const dbPath = path.join(__dirname, 'server', 'data.json');
+const dbPath = path.resolve(__dirname, '..', 'data.json');
 let db = { products: [], collections: [], settings: [], offers: [] };
 
 try {

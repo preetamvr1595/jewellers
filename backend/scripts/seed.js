@@ -1,9 +1,9 @@
-const storage = require('./server/scripts/storage');
+const storage = require('../src/storage');
 const fs = require('fs');
 const path = require('path');
 
-const imageDir = path.join(__dirname, 'assets', 'images');
-const files = fs.readdirSync(imageDir).filter(f => f.endsWith('.jpeg') || f.endsWith('.png'));
+const imageDir = path.resolve(__dirname, '..', '..', 'frontend', 'assets', 'images');
+const files = fs.existsSync(imageDir) ? fs.readdirSync(imageDir).filter(f => f.endsWith('.jpeg') || f.endsWith('.png')) : [];
 
 const products = files.map((file, i) => ({
   name: `Exquisite Item ${i + 1}`,
@@ -19,6 +19,6 @@ const products = files.map((file, i) => ({
 
 // Clear existing and seed
 const db = { products, collections: [] };
-fs.writeFileSync(path.join(__dirname, 'server', 'data.json'), JSON.stringify(db, null, 2));
+fs.writeFileSync(path.resolve(__dirname, '..', 'data.json'), JSON.stringify(db, null, 2));
 
 console.log(`Seeded ${products.length} products to data.json`);

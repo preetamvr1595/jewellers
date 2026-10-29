@@ -22,6 +22,7 @@ chain.png
 
 # Cache and Temp
 .npm-cache/
+*.log
 scratch/
-server/.npm-cache/
-client/.npm-cache/
+backend/.npm-cache/
+admin/.npm-cache/

@@ -5,15 +5,31 @@
   "rewrites": [
     {
       "source": "/admin/assets/:match*",
-      "destination": "/client/dist/assets/:match*"
+      "destination": "/admin/dist/assets/:match*"
     },
     {
       "source": "/admin/(.*)",
-      "destination": "/client/dist/index.html"
+      "destination": "/admin/dist/index.html"
     },
     {
       "source": "/admin",
-      "destination": "/client/dist/index.html"
+      "destination": "/admin/dist/index.html"
+    },
+    {
+      "source": "/assets/:match*",
+      "destination": "/frontend/assets/:match*"
+    },
+    {
+      "source": "/",
+      "destination": "/frontend/index.html"
+    },
+    {
+      "source": "/:file(.*\\..*)",
+      "destination": "/frontend/:file"
+    },
+    {
+      "source": "/:page",
+      "destination": "/frontend/:page.html"
     }
   ],
   "headers": [

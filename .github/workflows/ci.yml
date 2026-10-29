@@ -20,14 +20,14 @@ jobs:
           node-version: 18
           cache: 'npm'
 
-      - name: Install dependencies & build client
+      - name: Install dependencies & build admin
         run: |
-          cd client
+          cd admin
           npm install
           npm run build
 
-      - name: Install server dependencies & verify database integrity
+      - name: Install backend dependencies & verify database integrity
         run: |
-          cd server
+          cd backend
           npm install
           node scripts/verifyDb.js

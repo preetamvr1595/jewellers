@@ -24,55 +24,68 @@ MGS Jewellerys is a dual-application project consisting of:
 
 ```
 MGS-Jewellary-themed/
-├── index.html              # Public home page
-├── collections.html        # Public collections page
-├── offers.html             # Public offers page
-├── heritage.html           # Public heritage page
-├── calculator.html         # Public gold calculator
-├── client/                 # Admin dashboard (React)
+├── frontend/              # Public customer storefront (HTML, CSS, JS, Assets)
+│   ├── index.html         # Public home page
+│   ├── collections.html   # Public collections page
+│   ├── offers.html        # Public offers page
+│   ├── heritage.html      # Public heritage page
+│   ├── calculator.html    # Public gold calculator
+│   ├── global.css         # Global luxury styles
+│   ├── index.css          # Homepage styles
+│   ├── global.js          # Live rates & navigation logic
+│   ├── index.js           # Homepage dynamic showcase logic
+│   ├── sw.js              # Service Worker (PWA offline caching)
+│   ├── manifest.json      # Web App Manifest
+│   └── assets/            # High-res jewelry photography & branding
+├── admin/                 # Admin CMS dashboard (React 18 + Vite + Tailwind)
 │   ├── src/
-│   │   ├── components/     # React components
-│   │   ├── pages/          # Page components
-│   │   ├── services/       # API services
-│   │   ├── layouts/        # Layout components
-│   │   ├── App.jsx         # Main app
-│   │   └── main.jsx        # Entry point
-│   └── dist/               # Built admin (served by server)
-├── server/                 # Express API server
-│   ├── controllers/       # Route handlers
-│   ├── models/            # Mongoose models
-│   ├── routes/            # API routes
-│   ├── middleware/        # Auth middleware
-│   ├── uploads/           # Uploaded files
-│   └── index.js           # Server entry
-├── assets/                # Public site images
-└── CLAUDE.md              # This file
+│   │   ├── components/    # Reusable UI & modal components
+│   │   ├── pages/         # Dashboard pages (Products, Offers, Rates, etc.)
+│   │   ├── services/      # Axios API connector
+│   │   ├── layouts/       # Dashboard shell & sidebar
+│   │   ├── App.jsx        # Route definitions
+│   │   └── main.jsx       # React application entry
+│   └── dist/              # Production compiled assets
+├── backend/               # Express REST API Server
+│   ├── src/
+│   │   ├── controllers/   # Route controllers (auth, products, offers, rates)
+│   │   ├── middleware/    # Auth, security, and logging middleware
+│   │   ├── models/        # Mongoose data schemas
+│   │   ├── routes/        # Express API endpoints
+│   │   └── storage.js     # Unified data store (JSON + MongoDB Atlas sync)
+│   ├── scripts/           # verifyDb.js, exportBackup.js, seed scripts
+│   ├── uploads/           # Uploaded assets
+│   ├── data.json          # Local persistence database
+│   └── server.js          # Express server entry point
+├── docs/                  # API documentation (OpenAPI 3.0)
+└── CLAUDE.md              # Project documentation
 ```
 
 ## Running the Project
 
 ### Start Backend Server
 ```bash
-cd server
+cd backend
 npm start          # Production
 npm run dev        # Development (with nodemon)
 ```
 
 ### Start Admin Dashboard (Development)
 ```bash
-cd client
+cd admin
 npm run dev        # Runs on http://localhost:5173
 ```
 
 ### Build Admin for Production
 ```bash
-cd client
-npm run build      # Output to client/dist/
+cd admin
+npm run build      # Output to admin/dist/
 ```
 
-### Start Public Site Server
+### Start Public Storefront Only
 ```bash
-npm run dev        # Serves static HTML on port 8000
+npx http-server frontend -p 8000
+```
 ```
 
 ## API Endpoints

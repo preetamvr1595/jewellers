@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const DATA_FILE = path.join(__dirname, 'server', 'data.json');
+const DATA_FILE = path.resolve(__dirname, '..', 'data.json');
 
 const initialData = {
   settings: [

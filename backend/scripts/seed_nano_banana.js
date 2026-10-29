@@ -215,7 +215,7 @@ categoriesKeys.forEach((category) => {
 });
 
 // Load existing database
-const dbPath = path.join(__dirname, 'server', 'data.json');
+const dbPath = path.resolve(__dirname, '..', 'data.json');
 let db = { products: [], collections: [], settings: [], offers: [] };
 
 try {
