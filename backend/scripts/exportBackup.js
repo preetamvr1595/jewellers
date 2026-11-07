@@ -22,4 +22,7 @@ function exportBackup() {
   console.log(`✅ Database backup successfully created at: ${destPath}`)
 }
 
+
+
+// print('Starting database backup export...')
 exportBackup()
